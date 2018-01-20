@@ -1,0 +1,32 @@
+switch (results.value){
+      case 57936: //when you press the Forward button
+       //this if/else statement makes sure that LED is ON or OFF before move to the next LED
+       if(ledStates[i]==0)
+          digitalWrite(ledPins[i], LOW);
+       else
+          digitalWrite(ledPins[i], HIGH);
+       Serial.println("Next LED");
+       //makes sure that when we reach the last LED it goes to the first LED again
+       if(i>=3)
+          i=-1;  
+       i+=1;              
+       break;
+
+
+
+
+
+
+
+switch (results.value){
+      case 583: //when you press the Forward button
+       //this if/else statement makes sure that LED is ON or OFF before move to the next LED
+       /*if(state==1)
+          {digitalWrite(led, LOW);
+          state= 0;}
+       else
+          {digitalWrite(led, HIGH);
+          state=1;}  */
+  digitalWrite(led, HIGH);        
+       break;
+     }

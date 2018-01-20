@@ -1,0 +1,184 @@
+<html><head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="keywords" content="SN754410, Motor Control">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Reduce Motor Noise</title>
+</head><body topmargin="0" leftmargin="0" style="font-family: Comic Sans MS; font-size: 10pt;">
+
+<!--#include virtual="/header.htm"-->
+<div align="center">
+  <center>
+<table bordercolorlight="#E4ECF3" bordercolordark="#BACEE0" style="border-collapse: collapse;" background="GAN142_files/grid1.htm" border="5" bordercolor="#e4ecf3" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td style="border-style: solid; border-width: 1px;">
+  <p align="center"><font size="2" face="Comic Sans MS"><b>GAN1</b></font><font size="2"><b>42</b></font></p>
+  <p align="center"><font size="5"><b>Reduce Motor Noise</b></font></p>
+      <p align="center"><b><font size="2" face="Comic Sans MS">&nbsp; By Michael 
+      Simpson</font></b></p>
+      <p align="center">
+      &nbsp;</p>
+      <p align="left">
+      <font size="2">In the past when I built a Bot I would just slap it 
+      together and hope for the best.&nbsp; However when I started to use RC 
+      receivers to aid in the control of my bots the results left a lot to be 
+      desired.</font></p>
+      <p align="left">
+      <font size="2">After some research and and experiments here is what I have 
+      come up with.</font></p>
+      <p align="left">
+      <b><font size="2">Action 1 Motor Suppression Capacitors</font></b></p>
+      <blockquote>
+      <p align="left">
+      <font size="2">This is a black art.&nbsp; There are as many opinions on 
+      how to connect capacitors to&nbsp; motors as there are motors.&nbsp; 
+      However one method seems to be the most popular. This is the 3 capacitor 
+      method.&nbsp; I used this one in all my RC cars and many of the RC toys 
+      that I have taken apart use this method.</font></p>
+      </blockquote>
+      <p align="left">
+      &nbsp;</p>
+      <div align="center">
+        <center>
+        <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="6" width="70%">
+          <tbody><tr>
+            <td valign="top" width="50%">Step 1<p><font size="2">You will need 6 
+            .1uf capacitors They should be rated roughly 3 times your motor 
+            voltage.</font></p>
+            <p><font size="2">
+            <a href="http://www.kronosrobotics.com/xcart/customer/product.php?productid=16206">Kronos 
+            Robotics sells a set of 6</a></font></p>
+            <p><img src="GAN142_files/suprcaps.jpg" border="0" width="185" height="113"></p></td>
+            <td valign="top" width="50%">Step 2<p><font size="2">Take 2 
+            capacitors for each motor and twist them together as shown.&nbsp; 
+            Clip Leads and solder together.</font></p>
+            <p><img src="GAN142_files/interfer2.jpg" border="0" width="91" height="269"></p></td>
+          </tr>
+          <tr>
+            <td valign="top" width="50%">Step 3<p><font size="2">Scratch a spot 
+            on the motor between the two terminals as shown.&nbsp; Using 
+            soldering iron apply some solder.&nbsp; Then solder the twisted end 
+            of the two capacitors to the spot on the motor case as shown.</font></p>
+            <p><img src="GAN142_files/interfer3.jpg" border="0" width="268" height="199"></p></td>
+            <td valign="top" width="50%">Step 4<p><font size="2">Insert the 
+            third capacitor into the holes in the terminals as shown.&nbsp; At 
+            the same time connect your motor wires.&nbsp; Solder in place.</font></p>
+            <p><font size="2">If the motor leads are longer than a couple of 
+            inches they should be twisted.</font></p>
+            <p>&nbsp;</p>
+            <p><img src="GAN142_files/interfer4.jpg" border="0" width="258" height="138"></p></td>
+          </tr>
+        </tbody></table>
+        </center>
+      </div>
+      <blockquote>
+      <p align="center">
+      <img src="GAN142_files/interfer8.jpg" border="0" width="368" height="217"></p>
+      <p align="center">
+      <font size="2">Here is another pic of some motors with a slightly 
+      different terminal layout.</font></p>
+      <p align="left">
+      <font size="2">We attach a capacitor from each terminal to the metal case 
+      of the motor.&nbsp; Then we attach a third capacitor across the the 
+      terminals.</font></p>
+      </blockquote>
+      <p align="left">
+      <b><font size="2">Action 2 Twist Wires</font></b></p>
+      <blockquote>
+      <p align="left">
+      <font size="2">One of the easiest and most overlooked technique that can 
+      be done to lower motor noise is the twist your motor and motor power 
+      wires.&nbsp; This in affect forces the magnetic fields to cancel each 
+      other out.</font></p>
+      <p align="center">
+      <img src="GAN142_files/interfer5.jpg" border="0" width="330" height="299"></p>
+      <p align="left">
+      <font size="2">Notice how the motor power connector here is twisted.&nbsp; 
+      Took me all of 10 seconds to do this and I can tell the differences.&nbsp; 
+      If the motor leads are longer than a couple of inches they should be 
+      twisted as well.</font></p>
+      </blockquote>
+      <p align="left">
+      <font size="2">By just using the above techniques I multiplied my RC radio 
+      range by 4.&nbsp; What else can you do?&nbsp; Well actually there are 
+      several.&nbsp; </font></p>
+      <p align="left">
+      <b><font size="2">Shielding</font></b></p>
+      <blockquote>
+      <p align="left">
+      <font size="2">By placing a metal shield between your motors and radio can 
+      do wonders.&nbsp; Also keep in mind that some metals shield better than 
+      others.&nbsp;&nbsp; Carbon Steel shields several hundred times better than 
+      aluminum.&nbsp; Dont use this shielding as a conductor or you may compound 
+      the problem.</font></p>
+      </blockquote>
+      <p align="left">
+      <b><font size="2">Wire Placement</font></b></p>
+      <blockquote>
+      <p align="left">
+      <font size="2">Place your high current wires away from sensitive areas and 
+      antennas.&nbsp; Don't run the wire parallel with wires that are used as 
+      signaling in your micro controller.&nbsp; If you must its best to have 
+      them cross at 90 degrees.</font></p>
+      </blockquote>
+      <p align="left">
+      <b><font size="2">Micro Controller IO Leads</font></b></p>
+      <blockquote>
+      <p align="left">
+      <font size="2">When not in use micro controller leads should be held high 
+      or low.&nbsp;&nbsp; In most cases I have had success just setting the 
+      unused ports as output.&nbsp; </font></p>
+      </blockquote>
+      <p align="left">
+      <b><font size="2">RC Radio Antenna Placement</font></b></p>
+      <blockquote>
+      <p align="left">
+      <font size="2">In the past I used a piece of piano wire to wrap my RC 
+      receiver antenna around for support.&nbsp; This is an absolute No-No.&nbsp; 
+      I now use a stiff piece of plastic about the diameter of a drinking straw.&nbsp; 
+      I run the antenna up through the center.</font></p>
+      <p align="left">
+      <img src="GAN142_files/interfer6.jpg" border="0" width="215" height="348"><img src="GAN142_files/interfer7.jpg" border="0" width="246" height="292"></p>
+      <p align="left">
+      <font size="2">Where do I get this plastic tube.&nbsp; I get it from my 
+      local department store.&nbsp; I purchase one of those plastic kites.&nbsp; 
+      They no longer use wood.&nbsp; Instead they use this thin plastic tubing.&nbsp; 
+      I get 3, 2' tubes for about $2.</font></p>
+      <p align="left">
+      <font size="2">Also note how I attach small perf boards to my radio 
+      receiver with foam tape.&nbsp; I use small headers to run leads to a 
+      header so I can quickly attach my receiver to a breadboard on my bot.</font></p>
+      <p align="left">
+      &nbsp;</p>
+      </blockquote>
+  <p align="left"><b><font size="4" face="Comic Sans MS">P</font></b><font size="4" face="Comic Sans MS"><b>arts 
+  list</b></font></p>
+  <blockquote>
+  <p align="left"><font size="2" face="Comic Sans MS">
+  <a href="http://www.kronosrobotics.com/xcart/customer/cart.php?mode=add&amp;productid=16206&amp;amount=1">
+      <img src="GAN142_files/addcartbut.jpg" border="0" width="62" height="14"></a>
+  <a href="http://www.kronosrobotics.com/xcart/customer/product.php?productid=16206">Motor Suppression Caps</a>&nbsp;&nbsp;
+  </font></p>
+  </blockquote>
+  <p align="center">&nbsp;</p>
+    </td>
+  </tr>
+</tbody></table>
+  </center>
+</div>
+<blockquote>
+   <!--#include virtual="/footer2.htm"-->
+  
+  
+  
+  <p align="left">
+&nbsp;
+</p>
+
+</blockquote>
+
+</body></html>

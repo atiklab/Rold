@@ -1,0 +1,394 @@
+
+<!-- saved from url=(0050)http://www.robotix.in/tutorials/category/auto/grid -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Tutorials</title>
+    <link rel="stylesheet" type="text/css" href="./Tutorials_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Tutorials_files/header.css">
+    <link rel="stylesheet" type="text/css" href="./Tutorials_files/tutcss.css">
+    <link rel="stylesheet" type="text/css" href="./Tutorials_files/infrtut.css">
+    <link rel="stylesheet" type="text/css" href="./Tutorials_files/footer.css"> 
+    <link href="./Tutorials_files/css" rel="stylesheet" type="text/css">
+  <!-- Google Analytics Script -->
+    <!--<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-33668522-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>-->
+ </head>
+  <body>
+    <script src="./Tutorials_files/cb=gapi.loaded_1" async=""></script><script src="./Tutorials_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Tutorials_files/platform.js" gapi_processed="true"></script><script src="./Tutorials_files/jquery.js"></script>
+    <script type="text/javascript" src="./Tutorials_files/jquery.slimscroll.min.js"></script>
+      <script src="./Tutorials_files/bootstrap.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        $("#one").hover(function(){
+          $("#one-menu").slideDown();
+        }, function(){
+        $("#one-menu").hide();
+        });
+        $("#two").hover(function(){
+          $("#two-menu").slideDown();
+        }, function(){
+        $("#two-menu").hide();
+        });
+        $("#three").hover(function(){
+          $("#three-menu").slideDown();
+        }, function(){
+        $("#three-menu").hide();
+        });
+        $("#four").hover(function(){
+          $("#four-menu").slideDown();
+        }, function(){
+        $("#four-menu").hide();
+        });
+        $("#rtwo").hide();
+        $('#rthree').hide();
+        $('#dropit').hide();
+        $('.top').hide();
+        $('#fig1').hover(function(){
+          $('#top1').fadeIn();
+        },function(){
+          $('#top1').fadeOut();
+        })
+        $('#fig2').hover(function(){
+          $('#top2').fadeIn();
+        },function(){
+          $('#top2').fadeOut();
+        })
+        $('#fig3').hover(function(){
+          $('#top3').fadeIn();
+        },function(){
+          $('#top3').fadeOut();
+        })
+        $('#fig4').hover(function(){
+          $('#top4').fadeIn();
+        },function(){
+          $('#top4').fadeOut();
+        })
+        $('#fig5').hover(function(){
+          $('#top5').fadeIn();
+        },function(){
+          $('#top5').fadeOut();
+        })
+        $('#fig6').hover(function(){
+          $('#top6').fadeIn();
+        },function(){
+          $('#top6').fadeOut();
+        })
+        $('#fig7').hover(function(){
+          $('#top7').fadeIn();
+        },function(){
+          $('#top7').fadeOut();
+        })
+        $('#fig8').hover(function(){
+          $('#top8').fadeIn();
+        },function(){
+          $('#top8').fadeOut();
+        })
+        
+      $('a[href^="#"]').on('click', function(    event) 
+	{
+		var target = $($(this).attr('href'));
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top - 150
+				}, 1500);
+		}
+	});
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 100){
+			$('#sidehead').css({"position":"fixed", "top":100,"left":0});
+			var elem = document.getElementById('sidehead');
+			elem.style.width = 15 + "%";
+			elem.style.paddingLeft = 20;
+		}
+		else
+		{
+			$('#sidehead').css({'position':'relative','top':0,'left':0});
+			var elem = document.getElementById('sidehead');
+			elem.style.width = 100 + "%";
+
+			elem.style.paddingLeft = 0;
+		}
+	});
+      });
+</script>
+ <div id="header">
+            <table style="width:100%;">
+        <tbody><tr>
+        <td id="heading">
+          <ul id="nav">
+            <li class="dropdown" id="one">
+              <a href="http://www.robotix.in/"><h4>HOME</h4></a><h4><a href="http://www.robotix.in/"><b class="caret"></b></a>
+              <ul class="dropdown-menu" id="one-menu">
+                <li><a href="http://www.robotix.in/page/open/about_us"><h5>About Us</h5></a></li>
+                <li><a href="http://www.robotix.in/page/open/team"><h5>Our Team</h5></a></li>
+                 <li><script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+    popupWindow = window.open(
+    	url,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
+<a href="JavaScript:newPopup('https://docs.google.com/spreadsheet/viewform?formkey=dHRMTVBfemdCaUZyX24zN3dkUkJwZGc6MQ#gid=0');"><h5>Contact us</h5></a></li>
+              <li><a href="http://www.robotix.in/page/open/alumni"><h5>Alumni</h5></a></li>
+              </ul>
+            </h4></li>
+            <li class="dropdown" id="two">
+              <a href="http://www.robotix.in/tutorials/category/auto/grid#archive"><h4>ARCHIVE</h4></a><h4><a href="http://www.robotix.in/tutorials/category/auto/grid#archive"><b class="caret"></b></a>
+              <ul class="dropdown-menu" id="two-menu">
+                <li><a href="http://www.robotix.in/rbtx14"><h5>Robotix 14</h5></a></li>
+                <li><a href="http://www.robotix.in/rbtx13"><h5>Robotix 13</h5></a></li>
+              </ul>
+            </h4></li>
+            <li class="dropdown" id="three">
+              <a href="http://www.robotix.in/events"><h4>EVENTS</h4></a><h4><a href="http://www.robotix.in/events"><b class="caret"></b></a>
+              <ul class="dropdown-menu" id="three-menu">
+                <li><a href="http://www.robotix.in/events/event/cascade"><h5>Cascade</h5></a></li>
+                <li><a href="http://www.robotix.in/events/event/skyfall"><h5>Skyfall</h5></a></li>
+                <li><a href="http://www.robotix.in/events/event/minefield"><h5>MineField</h5></a></li>
+                <li><a href="http://www.robotix.in/events/event/stepup"><h5>StepUp</h5></a></li>
+                <li><a href="http://www.robotix.in/events/event/aughit"><h5>Aug-Hit</h5></a></li>
+                <li><a href="http://www.robotix.in/events/event/sudocode"><h5>Sudocode</h5></a></li>
+              </ul>
+            </h4></li>
+            <li class="dropdown" id="four">
+              <a href="http://www.robotix.in/tutorials"><h4>TUTORIALS</h4></a><h4><a href="http://www.robotix.in/tutorials"><b class="caret"></b></a>
+              <ul class="dropdown-menu" id="four-menu">
+                <li><a href="http://www.robotix.in/tutorials#fig1"><h5>KRAIG</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig3"><h5>AVR</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig7"><h5>Mechanical</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig2"><h5>Arduino</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig4"><h5>Autonomous</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig5"><h5>Computer Vision With MATLAB</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig6"><h5>Computer Vision With OpenCV</h5></a></li>
+                <li><a href="http://www.robotix.in/tutorials#fig8"><h5>Event Tutorials</h5></a></li>
+              </ul>
+            </h4></li>
+          </ul>
+        </td>
+        <td id="pict"><img src="./Tutorials_files/Picture1.png" width="50px;"></td>
+        <td id="heading2">
+          <ul id="nav">
+            <li id="link">
+              <a href="http://www.robotix.in/page/open/workshop11"><h4>WORKSHOPS</h4></a>
+            </li>
+            <li id="link">
+              <a href="http://www.robotix.in/page/open/dream_a_bot"><h4>KRAIG INITIATIVES</h4></a>
+            </li>
+            <li id="link">
+              <a href="http://blog.robotix.in/"><h4>BLOG</h4></a>
+            </li>
+           <!-- <li id="link">
+              <a href="http://www.robotix.in/forum/"><h4>FORUM</h4></a>
+            </li>-->
+            <li id="link">
+              <a href="http://www.robotix.in/app/"><h4>ANDROID APPLICATION</h4></a>
+            </li>
+          </ul>
+        </td>
+        </tr>
+      </tbody></table>         </div>
+            <div width="100%"><div class="heading" id="431"><h3>Introduction</h3></div><p></p><p>
+	Grid solving robots are very useful in various robotics competitions. In this tutorial we would be dealing with how the grid follower robot works along with its algorithm. A grid follower is basically a line follower with a modified code which helps it in traversing a grid. Just as a simple line follower, a grid follower takes inputs from various sensors to detect its position on the grid.</p>
+<p>
+	<img height="480px;" id="docs-internal-guid-7c3f367d-e252-a5dc-b2d1-9182927217cc" src="./Tutorials_files/vC8X6ef5eZ_BYfLHcZeB2ty5OPBaUePsxRXoaDI7EZ4wUNG3a8XXkaYVgtXcQ5sqDb9Si0pwktmzmUptzc-t3U7K5eF_Iuo0WWo2k9OfrF7rxZD6Og3bD2Hp" width="480px;"></p>
+<p></p><div class="heading" id="432"><h3>Robot</h3></div><p></p><p>
+	The robot will consisting of two parts</p>
+<ul>
+	<li>
+		Sensor Part</li>
+	<li>
+		Driving Part</li>
+</ul>
+<p>
+	<strong>Sensor Part:</strong></p>
+<p>
+	The sensor will be basically a light detecting sensor. We here are using the property of absorption. We all know that black surface tends to absorb all the light that falls on it. So, we place a LED(Light Emitting Diode) along with a LDR(Light Dependant Resistor) as our sensor. Suppose that our sensor is hovering upon white surface. White surface reflects more than black. Therefore, more light would be reflected on LDR and thus, its resistance would change and we can predict accordingly that the sensor will be upon white surface. When it will be hovering upon black surface, less amount of light will be reflected and so we can predict that it is over the black surface.<br>
+	<img height="178px;" id="docs-internal-guid-7c3f367d-e255-9067-2ea1-9d22d0798569" src="./Tutorials_files/DbpUUskKlK-8xmirR7WIReD47ARYU3p_xOZSsS0XFXnvm6cPeNp5FTBVPXrKGiwnB533H3-123Y4B38b9Tct7v39IJ4ZvHXSrzeteDwNPh-zQIRLTiDP9xjuqg" width="299px;"><br>
+	We can use IR sensor too instead of LED-LDR sensor.</p>
+<p>
+	<img height="250px;" id="docs-internal-guid-7c3f367d-e257-c8bc-6c07-b8af903ec60b" src="./Tutorials_files/bpzbTsW5LSNQsgs7pATEr9QEJT7y02v89U0oc5qWCKSl7XALQurs5CfHN219-m6jdrAdTGbzmgKI7X76bNZ_A4G-6v5PZVK9HhtL919J7k1k_CxSDZZ8Esg-vg" width="250px;"></p>
+<p>
+	<strong>Arrangement:</strong></p>
+<p>
+	The Robot will be a simple line follower with additional sensors for finding nodes in the grid (Node is basically an intersection between two lines). So there will be some sensors for line following and some sensors for node detection.<br>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp;&nbsp; --0-0-0-0-0--<br>
+	&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br>
+	&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br>
+	&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br>
+	0--[M]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [M]--0<br>
+	&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br>
+	&nbsp;&nbsp;&nbsp; -------------</span><br>
+	The above figure shows the robot along with sensor placement. The sensors are shown by “0” and the motors in the robot are shown by “[M]”. Basically the Grid follower robot will have line follower part (which includes the front sensors) and node detector (which includes the sensors parallel with motor shaft). The Grid follower has to basically follow line when it is not on a node and when a node arrives it has to decide whether to take a left or right depending upon the final position it has to reach.</p>
+<p>
+	<strong>Driving Part:</strong></p>
+<p>
+	This part is very simple it include two motor along with a motor driver IC. Motor driver will not be explained in this tutorial. It is explained in detail in <a href="http://www.robotix.in/tutorials/category/auto/motor_driver">this</a> tutorial.</p>
+<p></p><div class="heading" id="433"><h3>Line Following Algorithm</h3></div><p></p><p>
+	The line follower is explained in another <a href="http://www.robotix.in/tutorials/category/avr/linefollower">tutorial</a>. Basically it deciding which motor to run depending upon the locations of sensors. In our code one function is made which uses the line follower algorithm.</p>
+<p></p><div class="heading" id="434"><h3>Grid Following Algorithm</h3></div><p></p><p>
+	The Problem statement here is that given two coordinates on grid the robot has to move from one point to another. For convenience we are considering that the robot will cover the x-coordinates first and the will cover the y-coordinates. For this configuration we need to perform the following steps:<br>
+	Align in proper X-direction.<br>
+	Move on some nodes so that the current x-coordinate = the final x-coordinate.<br>
+	Align in proper Y-direction.<br>
+	Move on some nodes so that the current y-coordinate = the final y-coordinate.<br>
+	With these four steps your robot will reach the final coordinate.<br>
+	Example:<br>
+	Your robot is at (0,0) and it need to reach (2,2). The left lower corner is (0,0) and the right upper corner in (2,2).<br>
+	“<strong><span style="font-family:courier new,courier,monospace;">[w]</span></strong>” means forward direction.<br>
+	“<strong><span style="font-family:courier new,courier,monospace;">[s]</span></strong>” means backward direction.<br>
+	“<strong><span style="font-family:courier new,courier,monospace;">[a]</span></strong>” means left direction.<br>
+	“<strong><span style="font-family:courier new,courier,monospace;">[d]</span></strong>” means right direction.<br>
+	“<strong><span style="font-family:courier new,courier,monospace;">[0]</span></strong>” meas node.<br>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--<strong>[a]</strong>----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</span><br>
+	So currently your robot is at (0,0) and pointing in left direction.<br>
+	It has to reach (2,2) first covering x-coordinates and then y-coordinates.<br>
+	1] Align in proper direction.<br>
+	In this case the robot must point towards right. Therefore after this step your grid along with robot will look like.<br>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--<strong>[w]</strong>----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</span></p>
+<p>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--<strong>[d]</strong>----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</span><br>
+	2] Move on some nodes so that current x-coordinate is equal to final x-coordinate.<br>
+	In this case it has to move from (0,0) to (1,0) to (2,0)<br>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--<strong>[d]</strong>----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	</span></p>
+<p>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----<strong>[d]</strong>----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	</span></p>
+<p>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----<strong>[d]</strong>--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</span><br>
+	3] Align in proper direction.<br>
+	In this case the robot must point towards top. Therefore after this step your grid along with robot will look like.<br>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----<strong>[w]</strong>--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</span><br>
+	4] Move on some nodes so that current y-coordinate is equal to final y-coordinate.<br>
+	In this case it has to move from (2,0) to (2,1) to (2,2)<br>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----<strong>[w]</strong>--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	</span></p>
+<p>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----<strong>[w]</strong>--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	</span></p>
+<p>
+	<span style="font-family:courier new,courier,monospace;">&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----<strong>[w]</strong>--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<br>
+	--[0]----[0]----[0]--<br>
+	&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</span><br>
+	So, we have tested that our algorithm works!!</p>
+<p></p><div class="heading" id="435"><h3>The Hardware Part of the Robot</h3></div><p></p><p>
+	In this section the connections of sensors motor-driver and microcontroller will be explained. Before reading this section make sure that you completely understand the functioning of motor-driver IC (L293d) , LED-LDR sensor and pinouts of ATmega16.<br>
+	I will be using ATmega16 for this grid follower as my microcontroller.</p>
+<p>
+	As we have already discussed where to place the sensors on the bot, now we will talk about its connections with the microcontroller.<br>
+	The sensor will give output in the form of analog-voltage. This voltage has to be compared with some threshold voltage to decide whether the concerned sensor ie either on white or black. For this there are two methods:</p>
+<ol>
+	<li>
+		<strong>ADC - Analog to Digital Converter:</strong><br>
+		Here we assign a digital value to certain analog voltage and then using software compare it with the threshold value. In this case the output from the sensor can be directly connected to the ADC pin of the microcontroller.</li>
+	<li>
+		<strong>Comparator:</strong><br>
+		Here the analog voltage is compared using another know voltage(Vth) which can be set up using a potentiometer. Depending upon the connections the output will be either high or low. In this case the output from the comparator can be directly given as input to any I/O pin( Input / Output ) of the microcontroller.</li>
+</ol>
+<p>
+	The motors connection will be done with the motor-driver IC and the control lines of the motor driver IC are connected to the microcontroller (For more specific details refer to <a href="http://www.robotix.in/tutorials/category/auto/motor_driver">motor-driver tutorial</a>)</p>
+<p></p></div>
+       <div id="footer" vertical-align="bottom" ;="" height="350px">
+            <table align="center">
+          <tbody><tr>
+            <td style="background-color:white;">
+              <iframe style="width:310px;height:271px;" src="./Tutorials_files/likebox.htm" scrolling="no" frameborder="0" allowtransparency="false">&lt;a href="http://www.addlikebutton.net"&gt;addlikebutton.net&lt;/a&gt;&lt;style&gt;closemap"init"if=fb_connect-start="25"check_bandwith background-color="white"&lt;/style&gt;</iframe>
+            </td>
+            <td style="text-align:center;">
+              <form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#39;http://feedburner.google.com/fb/a/mailverify?uri=robotixblog&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true"><p style="color:white;">Subscribe to our e-mail newsletter to receive updates.</p><p><input type="email" name="email" style="margin:0 auto;" placeholder="Email ID"></p><input type="hidden" value="robotixblog" name="uri"><input type="hidden" name="loc" value="en_US"><input onfocus="inputFocus(this)" onblur="inputBlur(this)" class="form-button" type="submit" value="Subscribe"></form>
+            </td>
+            <td>
+            <table>
+            <tbody><tr>
+            <td>
+              <div style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 162px; height: 20px; background-position: initial initial; background-repeat: initial initial;" id="___follow_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 162px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1425992106435" name="I0_1425992106435" src="./Tutorials_files/follow.htm" data-gapiattached="true"></iframe></div>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <br>
+              <iframe target="_blank" align="middle" frameborder="0" id="fr" scrolling="no" src="./Tutorials_files/subscribe_widget.htm" style="overflow: hidden; padding-left:0px; height: 72px; width: 300px; border: 0; background:white;"></iframe>
+            </td>
+            </tr>
+            </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+       
+       <iframe name="oauth2relay764306727" id="oauth2relay764306727" src="./Tutorials_files/postmessageRelay.htm" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1"></iframe></body></html>

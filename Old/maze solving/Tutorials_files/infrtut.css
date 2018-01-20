@@ -1,0 +1,199 @@
+#premain
+{
+	width: 100%;
+	padding-top: 70px;
+	-webkit-filter: blur(1px) brightness(0.6);
+	-o-filter: blur(1px) brightness(0.6);
+	-ms-filter: blur(1px) brightness(0.6);
+	-moz-filter: blur(1px) brightness(0.6);
+}
+h1
+{
+	font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 72px;
+	line-height: 70px;
+	font-style: bold;
+	margin-bottom: 0px;
+    margin-top:40px;
+}
+h3
+{
+	font-family: BigNoodleTitling;
+font-weight: 670;
+letter-spacing: 0.025em;
+color: #506A85;
+text-align: center;
+margin-top: 0px;
+font-size: 20px;
+}
+#onehead 
+{
+	text-align: center;
+	width: 100%;
+    position:absolute;
+    top:0px;
+    padding-top:100px;
+    background: #F2F5F7;
+}
+#cont 
+{
+	padding-top: 150px;
+	padding-bottom: 100px;
+	background: #F2F5F7;
+}
+
+.figs
+{
+	width: 570px;
+	height: 500px;
+	padding:0px;
+}
+#fig1
+{
+	height: 400px;
+	width: 570px;
+	background: url(kraig.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig_cap
+{
+	border-left: 1px solid #E6E9ED;
+	border-right: 1px solid #E6E9ED;
+	border-bottom: 2px solid #E6E9ED;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: 25px;
+	width: 570px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background: white;
+	margin-bottom: 70px;
+    height: 210px;
+}
+#fig2
+{
+	height: 400px;
+	width: 570px;
+	background: url(arduino.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig3
+{
+	height: 400px;
+	width: 570px;
+	background: url(avr.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig4
+{
+	height: 400px;
+	width: 570px;
+	background: url(auto.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig5
+{
+	height: 400px;
+	width: 570px;
+	background: url(IP.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig6
+{
+	height: 400px;
+	width: 570px;
+	background: url(kinect.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig7
+{
+	height: 400px;
+	width: 570px;
+	background: url(manual.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig8
+{
+	height: 400px;
+	width: 570px;
+	background: url(eventtutes.jpg);
+	background-size: 570px 400px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#fig_cap p 
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: #73879C;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px; 
+	line-height: 18px;
+}
+.top
+{
+	background-color: #696969;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+    height: 400px;
+    box-shadow: 3px 3px 20px 0px rgba(40,40,40,0.4) inset, -3px -3px 20px 0px rgba(40,40,40,0.4) inset;
+}
+.top table 
+{
+	/*border-top: 40px solid transparent;*/
+	border-left: 30px solid transparent;
+}
+.top a:link 
+{
+	/*color: rgb(50,50,70);*/
+    color:white;
+}
+.top table tr 
+{
+	border: 7px solid transparent;
+}
+.top table a:hover
+{
+	text-decoration: underline;
+	color: white;
+	font-weight: normal;
+	text-shadow: 0px 0px 5px white;
+	-webkit-transition: all 0.3s;
+}
+.top a:active, .top a:visited
+{
+    /*color: rgb(50,50,70); */
+    color:white;
+}

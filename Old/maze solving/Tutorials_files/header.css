@@ -1,0 +1,1036 @@
+#header h5
+{
+    margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+#header h4
+{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#header
+{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: auto;
+	background: linear-gradient(-7.5deg, #333 20%, #393939 45%, #404040 50%, #292929 50%, #000 100%);
+	background: -webkit-linear-gradient(-7.5deg, #333 20%, #393939 45%, #404040 50%, #292929 50%, #000 100%);
+	background: -o-linear-gradient(-7.5deg, #333 20%, #393939 45%, #404040 50%, #292929 50%, #000 100%);
+	background: -ms-linear-gradient(-7.5deg, #333 20%, #393939 45%, #404040 50%, #292929 50%, #000 100%);
+	background: -moz-linear-gradient(-7.5deg, #333 20%, #393939 45%, #404040 50%, #292929 50%, #000 100%);
+	color: #d8d9d6;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 0 #000;
+	z-index: 100;
+	-webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+#heading
+{
+    width: 45%;
+	text-align: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2); 
+    -moz-font-smoothing: antialiased;
+	-moz-tap-highlight-color: rgba(2,2,2,0.2);
+    -ms-font-smoothing: antialiased;
+	-ms-tap-highlight-color: rgba(2,2,2,0.2);
+    -o-font-smoothing: antialiased;
+	-o-tap-highlight-color: rgba(2,2,2,0.2);
+}
+#heading:hover
+{
+	opacity: 1;
+}
+#nav
+{
+	list-style: none;
+	vertical-align: middle;
+	margin: 0px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.dropdown
+{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.dropdown a
+{
+	color: #cbcdc8;
+}
+.dropdown a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+.dropdown a:active
+{
+	text-decoration: none;
+	color: white;
+}
+.dropdown .caret
+{
+    margin-top:0px;
+    position: relative;
+    top:-9px;
+    right:-10px;
+}
+.dropdown-menu
+{
+    position: absolute;
+	top: 82px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	border-radius: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	z-index: -1000;
+	background-color: black;
+	opacity: 0.9;
+	box-shadow: 3px 3px 10px 0px rgba(30,30,30,0.9);
+	margin-left: 0px;
+    margin-top:10px;
+	border: 0px;
+}
+.dropdown-menu li a
+{
+	color: #a5a8a1;
+	transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-tap-highlight-color: rgba(2,2,2,0.2);
+    -ms-font-smoothing: antialiased;
+	-ms-tap-highlight-color: rgba(2,2,2,0.2);
+    -o-font-smoothing: antialiased;
+	-o-tap-highlight-color: rgba(2,2,2,0.2);
+
+}
+.dropdown-menu li a:hover
+{
+	background-color: rgba(20,20,20,1);
+	color: white;
+}
+
+#link
+{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+#link a
+{
+	color: #cbcdc8;
+}
+#link a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+#link a:active
+{
+	text-decoration: none;
+}
+#heading2
+{
+    width: 45%;
+	text-align: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+    -moz-font-smoothing: antialiased;
+    -moz-tap-highlight-color: rgba(2,2,2,0.2);
+    -ms-font-smoothing: antialiased;
+	-ms-tap-highlight-color: rgba(2,2,2,0.2);
+    -o-font-smoothing: antialiased;
+	-o-tap-highlight-color: rgba(2,2,2,0.2);
+}
+#heading2:hover
+{
+	opacity: 1;
+}
+#pict
+{
+	text-align: center;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.dropdown-menu li a
+{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+/*
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+	text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+}*/
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+      body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}*/
+/* Styles */
+/*}*/
+
+/* Smartphones (landscape) ----------- */
+/*@media only screen 
+and (min-width : 321px) {
+      body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}*/
+/* Styles */
+/*}*/
+
+/* Smartphones (portrait) ----------- */
+/*@media only screen 
+and (max-width : 320px) {
+      body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}*/
+/* Styles */
+/*}*/
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+      body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);*/
+/*}*/
+/* Styles */
+/*}*/
+
+/* iPads (landscape) ----------- */
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+      body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}*/
+/* Styles */
+/*}*/
+
+/* iPads (portrait) ----------- */
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+      body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);*/
+/*}*/
+/* Styles */
+/*}*/
+
+/* Desktops and laptops ----------- */
+/*@media only screen 
+and (min-width : 1224px) {*/
+/* Styles */
+/*  body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+}
+*/
+/* Large screens ----------- */
+/*@media only screen 
+and (min-width : 1824px) {*/
+/* Styles */ /* body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+}*/
+
+/* iPhone 4 ----------- */
+/*@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {*/
+/* Styles */
+/*  body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+ #header  h2 {
+    font-size: 24px;
+  }
+
+  #header h3 {
+    font-size: 21px;
+  }
+
+  #header h4 {
+    font-size: 18px;
+  }
+
+  #header h5 {
+    font-size: 14px;
+  }
+
+  #header h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+#heading
+{
+    width: 20%;
+    text-align: right;
+	float: left;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+
+#heading2
+{
+    width: 20%;
+	text-align: left;
+	float: right;
+	opacity: 0.5;
+	transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+  	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(2,2,2,0.2);
+}
+}*/

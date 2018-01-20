@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://patrickmccabemakes.com/tutorials/Maze_Solving/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Robotic Maze Solving Tutorial</title>
+    <script async="" src="./Robotic Maze Solving Tutorial_files/analytics.js"></script><script type="text/javascript" src="./Robotic Maze Solving Tutorial_files/jquery.min.js"></script>
+    <link href="http://patrickmccabemakes.com/lightbox/css/lightbox.css" rel="stylesheet">
+    <script src="./Robotic Maze Solving Tutorial_files/lightbox.min.js"></script>      
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://patrickmccabemakes.com/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://patrickmccabemakes.com/css/starter-template.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-51982716-1', 'patrickmccabemakes.com');
+        ga('send', 'pageview');
+
+    </script>
+      
+  </head>
+
+    
+  <body style="">
+   <nav class="navbar navbar-fixed-top navbar-inverse noise" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://patrickmccabemakes.com/" style="font-size:20px;"><i class="fa fa-cogs fa"></i> Patrick McCabe Makes</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://patrickmccabemakes.com/">Hardware</a></li>
+                    <li><a href="http://patrickmccabemakes.com/tutorials/page_1/">Tutorials</a></li>
+                    <li><a href="http://patrickmccabemakes.com/about/">About</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>Robotic Maze Solving Tutorial</h1>
+        </div>
+        
+        
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <a href="./Robotic Maze Solving Tutorial_files/main(1).jpg" data-lightbox="main"><img src="./Robotic Maze Solving Tutorial_files/main.jpg" class="img-responsive center-block"></a><br>
+            </div>
+        </div>
+        <hr>
+        
+        
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Intro</h2>
+                <p>Well you could say that I have been playing around with maze solving for a while. After three robots, I finally <a href="http://patrickmccabemakes.com/hardware/Maze_Solving_Robot_V3/">accomplished it</a>. I am going to try and share with you what I did.</p>
+            </div>
+        </div>
+        <hr>
+        
+        
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Left Hand On The Wall Algorithm</h2>
+                <p>What are the steps In maze solving?
+There are basically 2 steps. The first is to drive through the maze and find the end of it. The second is to optimize that path so your robot can travel back through the maze, but do it perfectly with out going down any dead ends.</p>
+                
+                <p>How does the robot find the end of the maze?
+I use a technique called "the left hand on the wall" algorithm. Imagine you are in a maze and you keep your left hand on a the edge of the wall at all times. Doing this would eventually get you out of a non-looping maze. This tutorial will only deal with mazes that do not contain cycles. </p>
+                
+                <p>This left hand on wall algorithm can be simplified into these conditions:</p>
+                <ol>
+                    <li>If you can turn left then turn left</li>
+                    <li>Else if you can continue driving straight then drive straight</li>
+                    <li>Else if you can turn right then turn right</li>
+                    <li>If you are at a dead end then turn around</li> 
+                </ol>
+                
+                <p>The robot has to make these decisions when at an intersection. An intersection is any point on the maze where you have the opportunity to turn. If the robot comes across an opportunity to turn and does not turn then this is consider going straight. Each move taken at an intersection or when turning around has to be stored.</p>
+                
+                <p>Here is the shorthand I will use for these decisions:</p>
+                <ul>
+                    <li>L = left turn</li>
+                    <li>R = right turn</li>
+                    <li>S = going straight</li>
+                    <li>B = turning around</li>
+                </ul>
+                
+                <p>So let me apply this method to a simple maze and see if you can follow it. 
+The red circle will be the robot. </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Path = L</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_1.jpg" data-lightbox="algorithm_1"><img src="./Robotic Maze Solving Tutorial_files/algorithm_1.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                     <div class="col-md-6">
+                         <h3 class="text-center">Path = LB</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_2.jpg" data-lightbox="algorithm_2"><img src="./Robotic Maze Solving Tutorial_files/algorithm_2.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Path = LBL</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_3.jpg" data-lightbox="algorithm_3"><img src="./Robotic Maze Solving Tutorial_files/algorithm_3.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                     <div class="col-md-6">
+                         <h3 class="text-center">Path = LBLL</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_4.jpg" data-lightbox="algorithm_4"><img src="./Robotic Maze Solving Tutorial_files/algorithm_4.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Path = LBLLB</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_5.jpg" data-lightbox="algorithm_5"><img src="./Robotic Maze Solving Tutorial_files/algorithm_5.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                     <div class="col-md-6">
+                         <h3 class="text-center">Path = LBLLBS</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_6.jpg" data-lightbox="algorithm_6"><img src="./Robotic Maze Solving Tutorial_files/algorithm_6.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                </div>
+                
+                <h3 class="text-center">Final Path = LBLLBSR</h3>
+                <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_7.jpg" data-lightbox="algorithm_7"><img src="./Robotic Maze Solving Tutorial_files/algorithm_7.jpg" class="img-responsive center-block"></a><br>
+                
+                <p>I hope you were able to see how those moves are made using the left hand on the wall technique. 
+This can be applied to any non-looping maze. </p>
+                
+            </div>
+        </div>
+        <hr>
+        
+        
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Shortest Path</h2>
+                <p>Ok so now you have a path. In this case it is "LBLLBSR", but how does the robot change that into the correct path? Well let's take a look at what the correct path would be. </p>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Path = S</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_8.jpg" data-lightbox="algorithm_8"><img src="./Robotic Maze Solving Tutorial_files/algorithm_8.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                     <div class="col-md-6">
+                         <h3 class="text-center">Path = R</h3>
+                        <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_9.jpg" data-lightbox="algorithm_9"><img src="./Robotic Maze Solving Tutorial_files/algorithm_9.jpg" class="img-responsive center-block"></a><br>
+                    </div>
+                </div>
+            
+                <h3 class="text-center">Final Path = SRR</h3>
+                <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_10.jpg" data-lightbox="algorithm_10"><img src="./Robotic Maze Solving Tutorial_files/algorithm_10.jpg" class="img-responsive center-block"></a><br>
+                
+                <p>So we need our path to go from "LBLLBSR" to the shortest path, which is "SRR". To start off we look at where we went wrong. A "B" indicates the robot turned around - meaning it went down the wrong path. To optimize the path we have to get rid of the "B" by using some substitution. </p>
+                
+                <p>Lets look at the first 3 moves in the path. These moves are "LBL". That move looks like this:</p>
+                <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_11.jpg" data-lightbox="algorithm_11"><img src="./Robotic Maze Solving Tutorial_files/algorithm_11.jpg" class="img-responsive center-block"></a><br>
+                
+                <p>Instead of turning left, then turning around, and turning left again, the robot should have gone straight. So we can say that LBL = S. This substitution is what the robot uses to optimize the path. That is one example but here is the whole list:</p>
+                <ul>
+                    <li>LBR = B</li>
+                    <li>LBS = R</li>
+                    <li>RBL = B</li>
+                    <li>SBL = R</li>
+                    <li>SBS = B</li>
+                    <li>LBL = S</li>
+                </ul>
+                
+                <p>You may not come across all of these when maze solving, but they are required when optimizing the path. Some even put "B" back into the path. This is required to further optimize the path correctly. You can figure out why for yourself or just trust me.</p>
+                <p>Let's optimize our path now that we know how to:<br>  
+                    Path = LBLLBSR<br>
+                    LBL = S so our new path would be: SLBSR <br>
+                    We also know LBS = R so our new path would be: SRR <br>
+                    As you can see we got the path that we were looking for. </p>
+                
+                <p>My robot optimizes the path as it travels. The path is stored in an array and every time it goes to store a new move it checks to see if the previous move was a "B", if it was then it optimizes the path. You need to know at least 3 moves to optimize the path - the move before and after the turn around (and the turn around itself). </p>
+            </div>
+        </div>
+        <hr>
+        
+        
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Another Example</h2>
+                <a href="http://patrickmccabemakes.com/tutorials/Maze_Solving/images_full_size/algorithm_12.jpg" data-lightbox="algorithm_12"><img src="./Robotic Maze Solving Tutorial_files/algorithm_12.jpg" class="img-responsive center-block"></a><br>
+                <p>Using the left hand on the wall algorithm, here is the path the robot would take: LLLBLLLRBLLBSRSRS</p>
+                <p>Now here is the process of shortening that path: LL(LBL = S)LL(RBL = B)(LBS = R)RSRS</p>
+                <p>The new path would be: LLSLLBRRSRS</p>
+                <p>Continue shortening it until all the “B”s are gone: LLSL(LBR = B)RSRS</p>
+                <p>The new path would be: LLSLBRSRS</p>
+                <p>Continue shortening it: LLS(LBR = B)SRS</p>
+                <p>The new path would be: LLSBSRS</p>
+                <p>Continue shortening it: LL(SBS = B)RS</p>
+                <p>The new path would be: LLBRS</p>
+                <p>Continue shortening it: L(LBR = B)S</p>
+                <p>The new path would be: LBS</p>
+                <p>The final path is: LBS = R</p>
+            </div>
+        </div>
+        <hr>
+        
+        
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Implementation Details</h2>
+                <p>I ran into some trouble programming my robot because I used an array of sensors that are all collinear. The problem with this is that different intersections may look alike. So my robot goes forward a bit every time it detects an intersection so it can see what is after that intersection. The prime example is when there is a right turn. If you can go straight instead of turning right then you should, but the only way to know if you can go straight is to drive forward and see if the line continues on.</p>
+                <p>You will also need a function that drives the robot in a relatively straight line. So it needs to do some line following also. That is why a maze robot generally has 4, 5, or 6 sensors. </p>
+                <p>I used some other techniques for completing turns without encoders, but this is getting too far away from maze solving and more into general practice. To cut it short, you will need some really good programming to keep your robot on the line well enough to read the sensors correctly and to correctly identify intersections.</p>
+            </div>
+        </div>
+        <hr>
+        
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Robotic Maze Solving Tutorial_files/jquery.min.js"></script>
+    <script src="./Robotic Maze Solving Tutorial_files/bootstrap.min.js"></script>
+  
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none; width: 1263px; height: 8681px;"></div><div id="lightbox" class="lightbox" style="display: none; top: 50px; left: 0px;"><div class="lb-outerContainer" style="width: 660px; height: 497px;"><div class="lb-container"><img class="lb-image" src="./Robotic Maze Solving Tutorial_files/main(1).jpg" style="display: block; width: 652px; height: 489px;"><div class="lb-nav" style="display: block;"><a class="lb-prev" href="" style="display: none;"></a><a class="lb-next" href="" style="display: none;"></a></div><div class="lb-loader" style="display: none;"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer" style="display: block; width: 660px;"><div class="lb-data"><div class="lb-details"><span class="lb-caption" style="display: none;"></span><span class="lb-number" style="display: none;"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

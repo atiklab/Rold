@@ -1,0 +1,1 @@
+$p("processControlWidget", "igniter-widget-266079", {"maxLink" : 20, "collectLinkSelector" : "a.title", "tagLinkSelector" : "a:not(.user)"}, {sts: 1425403593719});

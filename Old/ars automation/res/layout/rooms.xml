@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  
+  android:background="@drawable/back"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:gravity="center_horizontal"
+        android:text="Please select what you wish to control :"
+        android:textColor="#555"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         >
+</TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ToggleButton
+            android:id="@+id/ToggleButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ToggleButton01"
+            android:layout_below="@+id/ToggleButton01"
+            android:layout_marginTop="19dp"
+            android:text="ToggleButton"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ToggleButton02"
+            android:layout_below="@+id/ToggleButton02"
+            android:layout_marginTop="19dp"
+            android:text="ToggleButton"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ToggleButton01"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/toggleButton1" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ToggleButton02"
+            android:layout_alignLeft="@+id/ToggleButton05" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ToggleButton03"
+            android:layout_alignLeft="@+id/ToggleButton06" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ToggleButton07"
+            android:layout_alignTop="@+id/ToggleButton03"
+            android:text="ToggleButton"
+            android:textColor="#555" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="42dp"
+            android:layout_toRightOf="@+id/textView2" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggleButton1"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="ToggleButton"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ToggleButton01"
+            android:layout_toRightOf="@+id/ToggleButton05"
+            android:text="Dvc5:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toggleButton1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="Dvc1:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ToggleButton01"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="Dvc2:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ToggleButton02"
+            android:layout_toRightOf="@+id/ToggleButton06"
+            android:text="Dvc6:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ToggleButton02"
+            android:text="Dvc3:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ToggleButton04"
+            android:layout_alignRight="@+id/TextView02"
+            android:text="Dvc8:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editText1"
+            android:layout_toLeftOf="@+id/editText1"
+            android:text="OK" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Bluetooth Name"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ToggleButton03"
+            android:layout_alignLeft="@+id/TextView07"
+            android:text="Dvc7:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ToggleButton03"
+            android:layout_toLeftOf="@+id/ToggleButton03"
+            android:text="Dvc4:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="19dp"
+            android:text="Powered by ECE&quot;11 KU"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff00" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

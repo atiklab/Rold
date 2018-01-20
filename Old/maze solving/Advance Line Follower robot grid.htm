@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://playwithrobots.com/advance-line-follower-robot/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Advance Line Follower robot</title>
+  <script src="./Advance Line Follower robot grid_files/lazysizes.min.js" async=""></script>
+  <script src="./Advance Line Follower robot grid_files/jquery-1.11.2.min.js"></script>
+  <script src="./Advance Line Follower robot grid_files/bootstrap.min.js"></script>
+  <meta name="description" content="As the name suggests an Advanced Line Follower Robot is just a Simple Line Follower Robot with a few extra features. It will move on a grid of black lines ov...">
+  <link rel="stylesheet" href="http://playwithrobots.com/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://playwithrobots.com/css/custom.css">
+  <link rel="canonical" href="./Advance Line Follower robot grid_files/Advance Line Follower robot grid.htm">
+  <link href="http://playwithrobots.com/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<script type="text/javascript" async="" src="./Advance Line Follower robot grid_files/embed.js"></script></head>
+
+  <body>
+    <div class="container"><div class="row">
+  <div class="col-md-8 col-md-offset-1">
+    <nav class="navbar navbar-default">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://playwithrobots.com/">PlaywithRobots</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="http://playwithrobots.com/about">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </div>
+</div>
+<div class="row">
+	<div class="col-md-8 col-md-offset-1">
+    <h1 class="post-title">Advance Line Follower robot</h1>
+    <p class="post-meta">May 15, 2012</p>
+	</div>
+</div>
+<article class="article">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-1"><p>As the name suggests an Advanced Line Follower Robot is just a <a href="http://playwithrobots.com/simple-line-follower-robot" title="Simple line follower robot">Simple Line Follower Robot</a> with a few extra features. It will move on a grid of black lines over white background in search of a white box and when the box is detected will raise an alarm and return to its original coordinate in the grid.</p>
+
+<p>After reading this section completely you will be able to make one from simple components and play with it. Moreover we will make it modular so that it can be easily modified in future.</p>
+
+<p>The main electronics/mechanical components that will be used in making this line follower robot are ATmega32/16 micro-controller, L293D IC, five sensors made using IR LED, photodiode and LM324 IC, acrylic sheet, General purpose board, Two DC motors and battery.</p>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="./Advance Line Follower robot grid_files/GqAMgG-gc0c.htm"></iframe>
+</div>
+
+<h2>Chassis</h2>
+
+<p>The Chassis used for this line follower is same as the one we used in making Simple line follower robot. If you haven't made that, no worry just read the <a href="http://playwithrobots.com/simple-line-follower-robot#chassis" title="Chassis">chassis</a> part in the <a href="http://playwithrobots.com/simple-line-follower-robot">Simple line follower</a> robot article.</p>
+
+<h2>Sensors</h2>
+
+<p>For this robot we will be using an IR transmitter and a receiver pair. If you don't know how to pair these two just read about it in <a href="http://playwithrobots.com/light-sensors#photodiode" title="Photodiode">Light sensors</a>. We will be using four such pairs. The main advantage of using them over LDR is that they are more sensitive to IR light in comparison to the visible light therefore will work better under different light conditions.The overall circuit diagram of the sensor part and the logic used for the moving robot on a grid of black lines is shown below. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/snesor-principle.jpg" alt="Sensor Principle" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Sensor Principle</p>
+  
+</div>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/logic-advance-line-follower.jpg" alt="Logic" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Logic</p>
+  
+</div>
+
+<p>As described in above picture, the 2nd and the 3rd sensors are for line following and the 1st and the 4th sensors are for intersection detection.</p>
+
+<ul>
+<li>  In the First condition, when the 2nd and the 3rd sensors are on the black surface the robot will move forward.</li>
+<li>  In the Second condition, when the 2nd sensor is on the black line but the 3rd sensor is on the white surface, the robot will rotate left.</li>
+<li>  In the Third condition, when the 1st and the 4th sensors are on the black line, an intersection is detected.</li>
+<li>  In the Forth condition, when the 3rd sensor is on the black line but the 2nd sensor is on the white surface, the robot will rotate right.</li>
+</ul>
+
+<p>The complete circuit is divided into two parts. First, the IR LED and the photodiode pair is to be soldered on a small general purpose board. And a Comparator is to be soldered on another general purpose board, a little bigger than one used previously (Microcontroller circuit will also be soldered on this board later). Both boards are connected to each other with the help of connectors. Using two separate boards allows us to place the IR pairs below the robot for line sensing and the potentiometers above it, to make the adjustment of the threshold easier. Moreover it makes the circuit modular.</p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/advance-lfr-sensor part.jpg" alt="Circuit part 1" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Circuit part 1</p>
+  
+</div>
+
+<p>Given below is the picture of the above mentioned circuit in soldered form. The positioning of the IR LED and the Photodiode depends on the thickness of line. We will be using a black line of thickness 3 cm. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/advance lfr part1.jpg" alt="Soldered circuit" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Soldered circuit</p>
+  
+</div>
+
+<p>Now insert a small piece of black insulating tape in the gap between IR LED and Photodiode. This will insure that no direct IR rays from the IR LED falls on the Photodiode. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/ir_covering.jpg" alt="Covering" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Covering</p>
+  
+</div>
+
+<p>Placement of sensors plays a very important role in line sensing accuracy and the robot's movement. This circuit is fixed in front of the caster wheel below the robot and with the ground clearance of sensors as small as 2-3mm. Sensor circuit must be screwed tightly. See the picture below. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/sensor_placement1.jpg" alt="Sensor placement" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Sensor placement</p>
+  
+</div>
+
+<h2>Remaining circuit and AVR</h2>
+
+<p>The circuit diagram of part 2 is shown below. It may look a bit complex but will simplify as you read this page.</p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/advance lfr part2.jpg" alt="Circuit diagram part 2" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Circuit diagram part 2</p>
+  
+</div>
+
+<p>The overall Block diagram of this robot's circuit is shown below</p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/block diagram alfr.jpg" alt="Block diagram" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Block diagram</p>
+  
+</div>
+
+<p>It is always better if you divide big circuits into small modules (Parts). Here, I have divided the circuit into 5 different modules (blocks) named IR LED photodiode pair, Comparator, AVR, L293D and motor .</p>
+
+<ul>
+<li>  <strong>IR LED photodiode pair:</strong> They simply gives analog output to the Comparator.</li>
+<li>  <strong>Comparator part:</strong> They takes the input from IR LED photodiode pair, compares it with the threshold set by potentiometer and gives a digital logic output to AVR .</li>
+<li>  <strong>AVR:</strong> They takes input from 4 different comparators, processes it and outputs different control signals to L293D according to the sensors condition.</li>
+<li>  <strong>L293D:</strong> They take input from the AVR and correspondingly give output to the motors. If you haven't used this IC yet for any project, you can read this quick and easy tutorial of <a href="http://playwithrobots.com/dc-motor-driver-circuits#l293d-l298" title="L293d usage tutorial">motor driver circuits using L293D</a></li>
+<li>  <strong>Motors:</strong> They revolve according to the input from L293D.</li>
+<li>  <strong>Batteries:</strong> It is advisable to use Li-ion, or NiCd or NiMh or small lead acid batteries. Small cheap 9V batteries will drain completely within 4-5 minutes. If you are using 9V batteries make sure whenever output voltage of 7805 falls below 5V replace the battery.</li>
+</ul>
+
+<p>Similarly there is a obstacle sensor which gives output to AVR .</p>
+
+<p><strong>Related articles on PlayWithRobots</strong>
+</p><div class="related-articles">
+<a href="http://playwithrobots.com/simple-line-follower-robot">Simple line follower robot</a>  |  <a href="http://playwithrobots.com/edge-avoider-robot">Edge avoider robot </a> |  <a href="http://playwithrobots.com/light-sensors">Sensor circuits</a>  |  <a href="http://playwithrobots.com/dc-motor-driver-circuits">Motor driver circuts</a>  |  <a href="http://playwithrobots.com/avr-basic-io">AVR basic input output concepts</a></div><p></p>
+
+<p>The logic used for grid following is dividing each intersection in grid as a coordinate. Allocate a direction nomenclature according to which the robot moves. This will be cleared from the image below. You can download the code for ATmega32 microcontroller that i used <a href="http://playwithrobots.com/files/main.c" title="code">here</a>, but for information on basic concepts of AVR microcontrollers read the tutorials in <a href="http://playwithrobots.com/avr" title="AVR tutorials ">AVR</a> category. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/arena logic.jpg" alt="Logic" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Logic</p>
+  
+</div>
+
+<p>Now its time to make obstacle sensor for the bot!. </p>
+
+<h2><a name="obstacle"></a>Obstacle sensor</h2>
+
+<p>This sensor will be used to detect obstacles in the robot's path, in our case the white block. The concept is same as that of line following sensors on reflection of light principal. We will be using IR LED and photodiode pair. To know more about them see this tutorial on <a href="http://playwithrobots.com/light-sensors#photodiode" title="IR sensors">light sensors</a>. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/ir pair.jpg" alt="R LED Photodiode pair" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">R LED Photodiode pair</p>
+  
+</div>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/obstacle-circuit.jpg" alt="Circuit" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Circuit</p>
+  
+</div>
+
+<p>The complete circuit is to be soldered on a small general purpose board. The reason for not soldering this on the same board with our part2 circuit is that we want to make this sensor modular. If we want to use the obstacle sensor, just plug-in the 3 pin connector. If you are not on an obstacle detection grid just remove the connectors. In this way this can be used with any other robot. In my case a white block can be detected from a distance of 3cm to 7cm, which can be adjusted with the help of potentiometer. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/obstacle sensor.jpg" alt="Obstacle sensor" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Obstacle sensor</p>
+  
+</div>
+
+<p>Wow! chassis, sensors, circuit all done, lets combine them all!.</p>
+
+<h3>Combining all</h3>
+
+<p>Now every part is ready, but each part is of no use unless we combine them all. </p>
+
+<h4>Sensors</h4>
+
+<p>Placement of sensors is very important. They are the robots eyes. Line following sensors must be fixed tightly in front of caster with a ground clearance of 2-4mm. If the sensors are loose, the signals may fluctuate during robot's motion. Take time in fixing sensor and adjusting the threshold for sensors as a little time spend here may save lots of troubleshooting later on. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/sensor_placement1.jpg" alt="Line sensor Placement" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Line sensor Placement</p>
+  
+</div>
+
+<p>Obstacle sensor should be placed in front of the robot as can be seen in the final robot pictures at the end of this article.</p>
+
+<h4>Complete circuit</h4>
+
+<p>Place the remaining circuit on chassis and fix every connector to there respective places. There should be no loose wires hanging around, stick them with tape. </p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/alr-1.jpg" alt="Complete Bot -1" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Complete Bot -1</p>
+  
+</div>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/alfr-2.jpg" alt="Complete Bot -2" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Complete Bot -2</p>
+  
+</div>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/alfr-3.jpg" alt="Complete Bot -3" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Complete Bot -3</p>
+  
+</div>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/alfr-4.jpg" alt="Complete Bot -4" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Complete Bot -4</p>
+  
+</div>
+
+<h4>Arena</h4>
+
+<p>Obviously, without a grid the robot can't move. I made a sample arena on chart paper with black tapes though not the best one but still works . Arena must be neat and clean. The smallest marks here or there may fluctuate the sensors.</p>
+
+<div class="image-wrapper">
+  <img src="./Advance Line Follower robot grid_files/arena.jpg" alt="Arena" class=" img-responsive lazyloaded">
+  
+    <p class="image-caption">Arena</p>
+  
+</div>
+
+<p>After adjusting all the sensors threshold and with some trail and error finally the robot will starts moving. :) See the video below. </p>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="./Advance Line Follower robot grid_files/GqAMgG-gc0c.htm"></iframe>
+</div>
+
+<p>Hope you liked the above tutorial. Subscribe to PlaywithRobots on facebook for more updates.</p>
+</div>
+    <div class="col-md-3"><h3>More on PlaywithRobots</h3>
+
+
+
+
+  <h3 id="avr-tutorials">avr-tutorials</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/avr-introduction/">Introduction to AVR microcontrollers</a></li>
+  
+    <li><a href="http://playwithrobots.com/avr-getting-started/">Basic hardware and software required for AVR</a></li>
+  
+    <li><a href="http://playwithrobots.com/avr-fuse-bits/">AVR fuse bits</a></li>
+  
+    <li><a href="http://playwithrobots.com/avr-basic-io/">Input/Output Concept</a></li>
+  
+  </ul>
+
+  <h3 id="make-robots">make-robots</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/manually-controlled-robot/">Manually controlled robot</a></li>
+  
+    <li><a href="http://playwithrobots.com/edge-avoider-robot/">Edge avoider robot</a></li>
+  
+    <li><a href="./Advance Line Follower robot grid_files/Advance Line Follower robot grid.htm">Advance Line Follower robot</a></li>
+  
+    <li><a href="http://playwithrobots.com/simple-line-follower-robot/">Simple Line Follower robot</a></li>
+  
+  </ul>
+
+  <h3 id="motor-driver-circuits">motor-driver-circuits</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/dc-motor-driver-circuits/">DC-Motor Driver circuits</a></li>
+  
+  </ul>
+
+  <h3 id="pioneer-p3dx-robot">pioneer-p3dx-robot</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/p3dx-interaction/">Human Interaction with Pioneer P3-DX</a></li>
+  
+    <li><a href="http://playwithrobots.com/pioneer-p3dx-adstar/">Pioneer P3-DX and ADstar planner</a></li>
+  
+  </ul>
+
+  <h3 id="remote-control-circuits">remote-control-circuits</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/wired-relay-remote/">Wired relay remote</a></li>
+  
+  </ul>
+
+  <h3 id="sensors">sensors</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/kinect/">Kinect</a></li>
+  
+    <li><a href="http://playwithrobots.com/light-sensors/">Light sensors</a></li>
+  
+  </ul>
+
+  <h3 id="sparkv-robot">sparkv-robot</h3>
+  <ul>
+  
+    <li><a href="http://playwithrobots.com/controlling-sparkv-using-voice-commands/">Controlling SparkV using voice commands</a></li>
+  
+    <li><a href="http://playwithrobots.com/controlling-sparkv-using-android-phone-accelerometer/">Controlling SparkV using Android phone's accelerometer</a></li>
+  
+    <li><a href="http://playwithrobots.com/ros-and-sparkv/">ROS and SparkV</a></li>
+  
+  </ul>
+
+</div>
+  </div>
+</article>
+<div class="row">
+  <div class="col-md-8 col-md-offset-1">
+    <iframe src="./Advance Line Follower robot grid_files/likebox.htm" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" allowtransparency="true"></iframe>
+
+    
+    <div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 566px !important;" width="100%" src="./Advance Line Follower robot grid_files/saved_resource.htm" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="dsq-indicator-north" data-disqus-uid="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 750px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 750px !important; max-width: 750px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe><iframe id="dsq-indicator-south" data-disqus-uid="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 750px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 750px !important; max-width: 750px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname = 'playwithrobots';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+
+    
+  </div>
+</div>
+<div class="row top-buffer">
+  <footer class="col-md-8 col-md-offset-1 text-center">
+    Designed and built by <a href="http://abhishek.ind.in/">Abhishek</a>, code licensed under <a href="http://opensource.org/licenses/MIT">MIT License</a> and tutorials under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-SA-4.0</a>. Hosted on <a href="https://github.com/playwithrobots/playwithrobots.github.io">Github</a>.
+  </footer>
+</div>
+</div>
+  
+
+</body></html>

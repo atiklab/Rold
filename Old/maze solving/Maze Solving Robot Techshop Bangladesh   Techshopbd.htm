@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="alexaVerifyID" content="rq6jU7iaxVFVdYqvu95DddqapDI">
+<meta name="msvalidate.01" content="BD35CC78D599FEF47616777DE7752289">
+
+<meta name="description" content="&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: courier new,courier; font-size: small;&quot;&gt;This robot solve mazes in shortest time.&lt;/span&gt;&lt;/p&gt;,Techshop, ">
+<title>Maze Solving Robot Techshop Bangladesh | Techshopbd</title>
+<meta name="keywords" content="Techshop,Bangladesh,Tutorial,Maze Solving Robot,&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: courier new,courier; font-size: small;&quot;&gt;This robot solve mazes in shortest time.&lt;/span&gt;&lt;/p&gt;,robot, robotics, science, gear motor, motor, 12v motor, m">
+<link rel="stylesheet" type="text/css" media="all" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/482dc90d1afd4500028acaa9ba54c2cc.css">
+<link rel="shortcut icon" href="https://www.techshopbd.com/favicon.ico" type="image/x-icon">
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/jquery.min.js"></script>
+<script type="text/javascript" async="" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/ga.js"></script></head>
+<body class="page_tutorial_show">    <div id="dm_page">
+        <div class="dm_layout">
+            <div id="mainWrapper"> <!--main wrapper-->
+
+                <header class="clearfix dm_area dm_layout_top" id="dm_area_161"><div class="dm_zones clearfix"><div class="dm_zone"><div class="dm_widgets"><div class="dm_widget special_notice_list"><div class="dm_widget_inner"></div></div><div class="dm_widget main_mini_cart"><div class="dm_widget_inner"><div><div class="header_cart right">    <form onsubmit="" id="mini-cart" method="post" action="https://www.techshopbd.com/add-to-cart"></form>
+<img alt="" class="mimicart-image" height="16" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/shopping_cart.png" width="16"><span id="itemofCartDiv">Items: 0</span><span id="totalofCartDiv">&nbsp;Amount: <span class="taka_style">BDT</span> 0</span> in cart    <a href="javascript:void(0)" class="header_cart_link" onclick="document.getElementById(&#39;mini-cart&#39;).submit(); return false;"> Checkout now!</a>
+</div><div class="clear"></div></div></div></div><div class="dm_widget main_header"><div class="dm_widget_inner"><div id="message-box" class="message-popup"></div><div id="addtocart_popup" class="login-popup"><img alt="Loading.." height="100" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/0.gif" width="100"></div><div id="login-box" class="login-popup"><div class="padding10"><form class="dm_signin_form" id="dm_form_4" method="post" action="https://www.techshopbd.com/security/signin"><div class="field"><label class="required" for="signin_username"><em>*</em>Username/Email:</label><div class="input-box"><input type="text" name="signin[username]" class="gen-textbox required" id="signin_username"></div></div><div class="field"><label class="required" for="signin_password"><em>*</em>Password:</label><div class="input-box"><input type="password" name="signin[password]" class="gen-textbox required" id="signin_password"></div></div><div class="field"><input type="checkbox" name="signin[remember]" class="check-size a-middle" id="signin_remember">&nbsp;<label class="color_555 cursor_pointer" for="signin_remember">Remember Me</label></div><input type="submit" class="button_active" value="Login"><div class="clear_both"></div><div class="newsFree"></div><input type="hidden" name="signin[_csrf_token]" value="7c4f1854dd4c9019d96b9ffc475a13c3" id="signin__csrf_token"></form><div><a class="link gen_link" href="https://www.techshopbd.com/forget-password" title="Forget Password">Forgot your password?</a></div><div><span class="color_555">No Account ?</span><a class="link gen_link" href="https://www.techshopbd.com/user-registration" title="User Registration">Register Here</a></div></div></div><div class="a-center"><div class="body_table_container"><div class="body_table_row"><div id="logo_id" class="body_table_cell valign_bottom width189"><a class="link dm_parent" href="https://www.techshopbd.com/" title="Home"><img alt="TechshopBD" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/logo.gif" width="189"></a></div><div id="banner_id2" class="body_table_cell a-right"><div class="position_relative width808 height107"><img alt="Techshop Bangladesh" height="107" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/banner.jpg" width="766"><p class="position_absolute display_block right0 top0"><a id="loginBox" href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#login-box" class="login-window"><span>Login / Register</span></a></p></div></div></div></div></div><div class="top_menu a-center"><ul id="top_menu" class="a-center font16"><li><a class="link dm_parent" href="https://www.techshopbd.com/">Home</a></li><li><a class="link" href="https://www.techshopbd.com/about-us/support">Support</a></li><li><a class="link" href="https://www.techshopbd.com/special-offers">Special Offers</a></li><li><a class="link dm_parent" href="https://www.techshopbd.com/tutorial-categories" title="Tutorial Categories">Tutorials</a></li><li><a class="link" href="https://www.techshopbd.com/my-account">My Account</a></li><li><a class="link" href="https://www.techshopbd.com/contact-us">Contact Us</a></li><li><a class="link" href="https://www.techshopbd.com/training-course">Training Course</a></li><li><a class="link" href="https://www.techshopbd.com/about-us/faq">FAQ</a></li><li><a class="link" href="https://www.techshopbd.com/uploads/product_document/How%20to%20shop%20from%20techshopbd.pdf" target="_blank">Shopping Guideline</a></li></ul></div></div></div></div></div><div class="dm_zone"><div class="dm_widgets"><div class="dm_widget main_msg_lists"><div class="dm_widget_inner"><div style="text-align:center; padding-top:2px;">
+    </div></div></div></div></div></div></header>                <div class="two-column dm_layout_center clearfix">
+                    <div id="innerMainBodyDiv"><!--innerMainBodyDiv-->
+
+                        <div id="leftPanel"><!--leftPanel-->
+                            <aside class="dm_area dm_layout_left" id="dm_area_162"><div class="dm_zones clearfix"><div class="dm_zone"><div class="dm_widgets"><div class="dm_widget main_left_menu"><div class="dm_widget_inner"><div id="body_table_left" class="body_table_left">
+    <div class="siteHeader">Shop By Categories</div> 
+    <div class="box-border">           
+        <!--<div class="siteHeader2">Products</div>-->
+        <div class="leftmenu">
+            <ul id="theMenu"><li class="parent_li"><h3 class="nochild-head"><a href="javascript:void(0);">&nbsp;</a></h3><a class="link noparent nochild" href="https://www.techshopbd.com/product-categories/starter-kits">Starter Kits</a></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/burners-programmers">Burners/Programmers</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu2" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/8051-40507">8051</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/avr-9675">AVR</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/pic-9676">PIC</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/development-boards">Development Boards</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu3" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/linux">Linux</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/java">Java</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/net">.NET</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/arm-10798">ARM</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/avr-9715">AVR</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/pic-9717">PIC</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/other">Other</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/arduino">Arduino</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu4" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/boards">Boards</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/shields">Shields</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/fpga">FPGA</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu5" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/altera">Altera</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/papilio">Papilio</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/robotics">Robotics</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu6" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/quadcopter">Quadcopter</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/propeller">Propeller</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/solenoid">Solenoid</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/controller">Controller</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/actuator">Actuator</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/sensors-9925">Sensors</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/drivers">Drivers</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/motors">Motors</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/kits">Kits</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/wheels">Wheels</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/others">Others</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/gsm-gps-gprs">GSM/GPS/GPRS</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu7" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/antennas">Antennas</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/eval-board">Eval Board</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/modules">Modules</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/wireless">Wireless</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu8" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/xbee">XBee</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/bluetooth">Bluetooth</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/wifi">WiFi</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/rf">RF</a></li></ul></li><li class="parent_li"><h3 class="nochild-head"><a href="javascript:void(0);">&nbsp;</a></h3><a class="link noparent nochild" href="https://www.techshopbd.com/product-categories/breakout-boards">Breakout Boards</a></li><li class="parent_li"><h3 class="nochild-head"><a href="javascript:void(0);">&nbsp;</a></h3><a class="link noparent nochild" href="https://www.techshopbd.com/product-categories/modules-9698">Modules</a></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/micro-controllers">Micro Controllers</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu11" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/arm">ARM</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/8051">8051</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/avr">AVR</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/pic">PIC</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/analog-ics">Analog ICs</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu12" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/chargers">Chargers</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/driver">Driver</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/comparator">Comparator</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/general-ic">General IC</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/timer">Timer</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/pwm">PWM</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/opamps">OPAMPs</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/digital-ics">Digital ICs</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu13" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/rtc">RTC</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/converter-ic">Converter IC</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/adder">Adder</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/buffer">Buffer</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/counter">Counter</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/digital-rheostat">Digital Rheostat</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/decoder">Decoder</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/encoder">Encoder</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/eeprom">EEPROM</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/flip-flop">Flip Flop</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/frequncy-divider">Frequncy Divider</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/gate">Gate</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/gate-inverter" title="Gate &amp; Inverter">Gate &amp; Inverter</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/lcd-driver">LCD Driver</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/memory">Memory</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/multiplexer">Multiplexer</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/multi-vibrator">Multi Vibrator</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/pll">PLL</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/register">Register</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/signal-switches">Signal Switches</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/transceiver">Transceiver</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/displays">Displays</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu14" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/led-14571">LED</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/alphanumeric">Alphanumeric</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/7-segment">7 segment</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/dot-matrix">DOT Matrix</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/lcd">LCD</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/cables-connectors" title="Cables &amp; Connectors">Cables &amp; Connectors</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu15" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/socket">Socket</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/cable">Cable</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/connector">Connector</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/passive-components">Passive Components</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu16" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/laser">Laser</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/inductor">Inductor</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/resistor">Resistor</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/capacitor">Capacitor</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/led">LED</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/diode">Diode</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/regulator">Regulator</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu17" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/ldo">LDO</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/linear">Linear</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/switching-mode">Switching Mode</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/switching-device">Switching Device</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu18" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/thyristor">Thyristor</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/triac">Triac</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/transistor">Transistor</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/mosfet">MOSFET</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/optocoupler">Optocoupler</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/miscellaneous-283">Miscellaneous</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu19" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/magnet">Magnet</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/pump">Pump</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/cooler">Cooler</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/generator">Generator</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/charger">Charger</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/memory-card">Memory Card</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/key-pad">Key Pad</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/battery">Battery</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/transformer">Transformer</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/switch">Switch</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/relay">Relay</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/dc-fan">DC Fan</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/project-board">Project Board</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/crystal-oscillator">Crystal Oscillator</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/audio">Audio</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu20" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/recorder">Recorder</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/microphone">Microphone</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/buzzers">Buzzers</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/sensors">Sensors</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu21" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/sound">Sound</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/load">Load</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/motion">Motion</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/weight">Weight</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/water">Water</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/pressure">Pressure</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/moisture-sensor">Moisture Sensor</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/current">Current</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/gas">Gas</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/flex">Flex</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/intertial">Intertial</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/biometrics">Biometrics</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/miscellaneous">Miscellaneous</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/light">Light</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/temperature">Temperature</a></li></ul></li><li class="parent_li"><h3 class="nochild-head"><a href="javascript:void(0);">&nbsp;</a></h3><a class="link noparent nochild" href="https://www.techshopbd.com/product-categories/solar">Solar</a></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/e-textile">E-Textile</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu23" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/lilypad">Lilypad</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/thread">Thread</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/fabric">Fabric</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/conductive-pen">Conductive Pen</a></li></ul></li><li class="parent_li"><a class="link" href="https://www.techshopbd.com/product-categories/tools">Tools</a><h3 class="head"><a href="javascript:;">&nbsp;</a></h3><ul id="xtraMenu24" class="subMenu" style="display: none;"><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/other-tools">Other Tools</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/hand-tools">Hand Tools</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/meters">Meters</a></li><li><a class="link noparent" href="https://www.techshopbd.com/product-categories/power-supplies">Power Supplies</a></li><li style="background-image: url(https://www.techshopbd.com/newTheme/images/li_bg.png); background-attachment: scroll; background-color: transparent; padding-bottom: 5px; background-position: 0% 0%; background-repeat: no-repeat no-repeat;"><a class="link noparent" href="https://www.techshopbd.com/product-categories/soldering">Soldering</a></li></ul></li><li class="parent_li" style="background-image: none; padding-bottom: 0px; background-position: initial initial; background-repeat: initial initial;"><h3 class="nochild-head"><a href="javascript:void(0);">&nbsp;</a></h3><a class="link noparent nochild" href="https://www.techshopbd.com/product-categories/retired">Retired</a></li></ul>        </div>
+    </div>
+</div>
+<div class="freeDiv5"></div>
+</div></div><div class="dm_widget supplier_list_sidebar"><div class="dm_widget_inner">    <div class="siteHeader">Shop By Suppliers</div>
+    <div class="box-border supplier_lists">
+                <div class="first supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/techshop-bangladesh" title="Techshop Bangladesh"><img alt="Techshop Bangladesh" height="77" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/techshopbd_1.jpg" width="160"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/pi-labs-bangladesh" title="Pi Labs, Bangladesh"><img alt="Pi Labs, Bangladesh " height="50" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/Pi_Logo1.jpg" width="135"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/sparkfun-usa" title="SparkFun, USA"><img alt="SparkFun, USA" height="62" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/sparkFun.jpg" width="135"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/seeed-studio-china" title="Seeed Studio, China"><img alt="Seeed Studio, China" height="29" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/SeeedStudio_logo.gif" width="180"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/pololu-usa" title="Pololu, USA"><img alt="Pololu, USA" height="57" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/logo-Pololu-white.png" width="140"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/waveshare-electronics-china" title="Waveshare Electronics, China"><img alt="Waveshare Electronics, China" height="81" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/logo.jpg" width="161"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/dfrobot-china" title="DFRobot, China"><img alt="DFRobot, China" height="32" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/DFRobot_Logo_2.png" width="170"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/hobbyking-hong-kong" title="Hobbyking, Hong Kong"><img alt="Hobbyking, Hong Kong" height="57" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/hobbyking-store-logo.png" width="113"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/marketplace-bangladesh" title="Marketplace, Bangladesh"><img alt="Marketplace, Bangladesh" height="36" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/marketplace_logo1.jpg" width="180"></a></div>
+                <div class=" supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/made-in-china" title="Made in China"><img alt="Made in China" height="75" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/maden_in_china.jpg" width="90"></a></div>
+                <div class="last supplier"><a class="link" href="https://www.techshopbd.com/supplier-lists/thinnkware" title="Thinnkware"><img alt="Thinnkware" height="88" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/0ndd02nfr585ix820ls2_2.jpeg" width="202"></a></div>
+            </div>
+    <div class="freeDiv5"></div>
+</div></div></div></div></div></aside>                        </div>
+                        <!--End leftPanel-->
+
+                        <div id="rightPanel"><!--rightPanel-->
+                            <div id="rightUpper"><!--rightUpper-->
+                                                            </div>
+                            <div id="rightBottom"><!--rightBottom-->
+                                <div class="dm_area dm_page_rightbottomleft" id="dm_area_121"><div class="dm_zones clearfix"><div class="dm_zone"><div class="dm_widgets"><div class="dm_widget main_search_panel"><div class="dm_widget_inner"><div class="search_table_container">
+    <div class="search_table_row">
+        <form action="https://www.techshopbd.com/search-results" method="get">
+            <div class="search_table_cell search_background">
+                <span class="color_fff">Search</span>
+                <select name="search[type]" id="searchtype" class="width22 padding2">
+                    <option value="Product"> Products </option>
+                    <!--<option value="News"  > News </option>-->
+                    <option value="Tutorial"> Tutorials </option>
+                    <!--<option value="Comments" > Comments </option>-->
+                </select>
+                <input type="text" id="inputString" class="inputString width60 padding3" name="search[q]" onblur="fill();" value="" autocomplete="off">
+                <input type="submit" class="cursor_pointer search_botton width5 padding3" value=" ">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="suggestionsBox display_none" id="suggestions">
+    <div class="suggestionList" id="autoSuggestionsList">
+    </div>
+</div></div></div><div class="dm_widget tutorial_show"><div class="dm_widget_inner">    <div>
+        <div class="product_table_container">
+            <div class="product_table_row">
+                <div class="product_table_cell" align="left">
+                    <div class="gap"></div>
+                    <span class="page_title a-left">
+                        Maze Solving Robot                    </span>
+                    <br>
+                    <span class="page_title a-left font14">
+                        by :  Fahad Mirza |
+                        April 19, 2011 |
+                        <a id="coment_box" href="javascript:void(0)">2 comments</a>
+                        Skill Level:
+                        <img alt="" class="star" height="16" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/full_star.png" width="16"><img alt="" class="star" height="16" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/full_star.png" width="16"><img alt="" class="star" height="16" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/full_star.png" width="16">Advanced                    </span>
+                    <div class="gap"></div>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <fieldset class="coment_box">
+            <legend>Summary:</legend>
+            <div class="summary">
+                <p style="text-align: justify;"><span style="font-family: courier new,courier; font-size: small;">This robot solve mazes in shortest time.</span></p>            </div>
+        </fieldset>
+        <div class="gap"></div>
+        <div id="tutorialTabs">
+            <ul class="allTabs">
+                <li class="active"><a class="tabLink" href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#description">Description</a></li>
+                                <li><a class="tabLink" href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#gallery">Gallery</a></li>
+                <li><a class="tabLink" id="tutorials_comments_li" href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#tutorials_comments">Comments                        [2]</a></li>
+                                    <li><a class="tabLink" href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#related_products">Related Products                            [3]</a></li>
+                                            </ul>
+            <div class="tutorialTabs_contents" id="description" style="display: block;">
+    <p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="text-decoration: underline;"><span style="font-size: x-large; font-family: times new roman,times;">Maze Solving Robot</span></span></p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong><span style="font-size: medium; font-family: times new roman,times;">Introduction</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">In this tutorial, I’ll show you how to build a maze solving robot, step by step. In case you don’t know what maze solving robot is, it is an autonomous mobile robot that is able to navigate inside a maze and has the intelligence to find the exit of the maze. In a line maze contest, robots travel as quickly as possible along the lines from a designated start to the goal, keeping track of the intersections that they pass along the way. Robots are given several chances to run the maze, so that they can follow the fastest possible path after learning about all of the dead ends.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">If you already did the <a title="Line Following Bot" href="https://www.techshopbd.com/index.php/tutorial-categories/robotics/line-following-robot" target="_blank"><span style="font-size: medium;">line following robot</span></a> then you already know a lot. We will use that robot (so we’ll omit ckt diagram) and just change the code a little bit.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div><span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+<object width="400" height="300" data="http://www.youtube.com/v/7bXjzP5PkEs&fs=1" type="application/x-shockwave-flash">
+<param name="data" value="http://www.youtube.com/v/7bXjzP5PkEs&amp;fs=1">
+<param name="src" value="http://www.youtube.com/v/7bXjzP5PkEs&amp;fs=1">
+<param name="allowfullscreen" value="true">
+</object>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong><span style="font-size: medium; font-family: times new roman,times;">How maze solving is done:</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">One of the most common methods for solving a maze is called the wall follower rule which can use the right-hand rule or the left-hand rule. Put one hand on the wall inside the maze and start walking. If the maze is simply connected and has no loops, then you will always get to the end of the maze. See this <a href="http://en.wikipedia.org/wiki/Maze_solving_algorithm">Wikipedia page</a> for a more detailed explanation of maze solving algorithms.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Suppose you are in a maze with a number of hallways. There are many dead ends and you can't see beyond the next corner. If the maze has no islands, or areas in the maze that are not connected to any of the walls in your vicinity, then the left-hand rule will always get you to the end of the maze. Do this...</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Place your left hand on the wall.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Begin walking forward</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">At every intersection, and throughout the maze, keeps your left hand touching the wall on your left.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Eventually, you will reach the end of the maze. You will probably not go the shortest and most direct way, but you will get there.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline; font-family: times new roman,times;"><strong><span style="font-size: medium;">Some example of the mazes:</span></strong></span></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/small_maze.JPG" border="0" alt="example" width="499" height="200"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">In order to solve the maze, the robot needs to traverse the maze twice.</span></p>
+<ul style="text-align: justify;">
+<li><span style="font-size: small; font-family: times new roman,times;">In the first run, it goes down some number of dead-ends, but records these as “bad” paths so that they can be avoided on the second run.</span></li>
+<li><span style="font-size: small; font-family: times new roman,times;">Next, bot will follow the correct line.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">So there will be two infinity loop in main function. 1<sup>st</sup> one helps the robot explore whole maze including wrong turns, dead ends. Then it will memorize those. Next time when it starts again from the beginning it won’t do any wrong moves i.e. it will reach the end faster.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">But there is lot to discuss. This robot follows like a Line Following Robot but it will take account for intersections. That is the most important thing.</span></p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;"><br></span></p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;"><span style="font-size: medium; font-family: times new roman,times;">Detecting Intersections</span></span></strong></p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">The first step for me was to put myself in the robot's place. I did this by picturing myself walking around a room with only a black line below me, and only the ability to look straight down through a limited rectangle. From this viewpoint, in the maze below, there are only eight possibilities, or eight ways the robot can come up on an intersection.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazes.jpg" border="0" width="350" height="271"></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">So the task becomes </span><em><span style="font-family: courier new,courier;">"How do I develop a set of behaviors so the robot reacts correctly at each intersection?"</span></em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline; font-family: times new roman,times;"><strong><span style="font-size: medium;">The Five Sensors</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Since the robot will have five sensors (from line following), we next need to establish how they work and how I can develop the algorithm for the eight possibilities above. We also need to be talking about the same thing in the descriptions below.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">As you know from line following robot, a one indicates that this sensor senses black just below it and a zero means that the sensor senses or "sees" white just below it.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Using this logic, here are a few combinations of patterns for this robot only:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: x-small;">11100 / 11000 = Robot gotten to a left hand turn (or Straight above and Left)</span></p>
+<p><span style="font-family: courier new,courier; font-size: x-small;">00111 / 00011 = Robot gotten to a right hand turn (or Straight above and Right)</span></p>
+<p><span style="font-family: courier new,courier; font-size: x-small;">11111 / 01110 = Robot is at a T intersection, 4-way, or the end of the maze.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Notice that several of these combinations have more than one possibility!! For example, when I get to a T intersection, all of my sensors see black. When I get to a "Four-Way" intersection all of my sensors see black. When I get to the end of the maze, all of my sensors see black. So, I will need a way to differentiate between these three so I can select the correct behavior.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">So, the first steps in the programming algorithm seem to be deciding how to handle these eight possible intersections above.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="font-family: times new roman,times; font-size: medium;">1) Dead End</span></span></strong></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-family: times new roman,times; font-size: small;">The easiest of the eight above is the dead end. Notice that this is the only time in the maze that the robot sensors will all be zeros:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: small;">0 0 0 0 0 = No black line; must have run off the line at dead end.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: times new roman,times; font-size: small;">In this case, the behavior is simple; Do a 180 degree turn and go back the way you came.</span></p>
+<p><span style="font-family: times new roman,times; font-size: small;"><br></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline; font-size: medium;"><span style="font-family: times new roman,times;">2) Right only / Straight or Right</span></span></strong></p>
+<p><span style="font-family: times new roman,times; font-size: small;">Right only and Straight or Right intersections both present the same pattern initially.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: small;">0 0 1 1 1 / 0 0 0 1 1</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (1).jpg" border="0" width="309" height="141"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">How do we find out which???&nbsp; All you have to do is move the robot forward for 1-2 seconds. This will guarantee that the robot has passed over the line i.e. cross the&nbsp; 00111. What will the sensors see when robot past the intersection? There are only two choices. Either the robot will see all zeros (0 0 0 0 0) if it is the Right Turn Only, and something else if it just encountered a Straight or Right intersection. So the pseudo code for these two intersections is:</span></p>
+<p>&nbsp;</p>
+<pre><span style="font-family: courier new,courier; font-size: small;">If pattern = "00111" then 
+    Go forward for 1-2 sec 
+    pattern = readSensors() 
+if pattern = "00000" then 
+    go right turn 
+else 
+    Go straight</span>
+</pre>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="font-size: medium; font-family: times new roman,times;">3) Straight or Left and Left Turn Only</span></span></strong></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Left only and Straight or Left intersections both present the same pattern initially.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: courier new,courier;">1 1 1 0 0 / 1 1 0 0 0</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">How do we find out which intersection this is??? Once again, we go forward for 1-2 seconds and now the robot sees either all zeros for Left Only and something else if it is the left or Straight intersection. Because this is a left-hand rule robot, the robot ALWAYS prefers a left turn in a Straight or Left situation, so the pattern 1 1 1 0 0 will always trigger a left turn. So no need to tense. Whenever this comes just turn left. If this was a right-hand rule robot, we would develop pseudo code similar to that above to decide what to do.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="font-size: medium; font-family: times new roman,times;">4) "T" Intersection, 4-Way or End of Maze</span></span></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: times new roman,times; font-size: small;">All three of these show an all ones pattern:</span></p>
+<ul>
+<li><span style="font-family: courier new,courier; font-size: small;">Left or Right "T"</span></li>
+<li><span style="font-family: courier new,courier; font-size: small;">Four Way</span></li>
+<li><span style="font-family: courier new,courier; font-size: small;">End of Maze</span></li>
+</ul>
+<p><span style="font-family: times new roman,times; font-size: small;">...will all detect 1 1 1 1 1 initially.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">Now, after go forward, there are three possibilities:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: small;">1 1 1 1 1 = End of Maze = STOP</span></p>
+<p><span style="font-family: courier new,courier; font-size: small;">0 0 0 0 0 = T Intersection, go left</span></p>
+<p><span style="font-family: courier new,courier; font-size: small;">0 0 1 0 0 = Four-Way = go left</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: times new roman,times;"><strong><span style="font-size: medium;">Following the Line</span></strong></span></span></p>
+<p><span style="font-size: small; font-family: times new roman,times;">The robot, most of the time, will be involved in one of the following behaviors:</span></p>
+<ul>
+<li><span style="font-size: small; font-family: courier new,courier;">Following the line, looking for the next intersection.</span></li>
+<li><span style="font-size: small; font-family: courier new,courier;">At an intersection, deciding what type of intersection it is.</span></li>
+<li><span style="font-size: small; font-family: courier new,courier;">At an intersection, making a turn.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">These steps continue looping over and over until the robot senses the end of the maze. As the robot actually spends most of its time following the line between intersections, that is cover in the <a title="Line Following Bot" href="https://www.techshopbd.com/index.php/tutorial-categories/robotics/line-following-robot" target="_blank"><span style="font-size: medium;">line following robot</span></a>. To see the patterns that develops while the robot is following the line, are:</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/table.jpg" border="0" width="374" height="223"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="text-decoration: underline; font-size: large;"><strong><span style="font-family: times new roman,times;">First Thoughts</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Any robot that hopes to solve a maze must somehow keep track of where it has been and then perform some algorithm to decide on how to eliminate travel down unproductive pathways. This section talks about how to store, and later modify all of the turns made while traversing the maze.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Let's start with a simple maze and some definitions so we are speaking the same language. Here is a simple maze. The robot is at the start and is required to find the "End of Maze".</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/simple_maze.jpg" border="0" width="329" height="164"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">First, we will traverse the maze in English, then transform our English words to an abbreviated code that will be easy to store.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong><span style="font-family: times new roman,times; font-size: medium;">Left-Hand Rule and Right-Hand Rule Defined</span></strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Mazes of this type are best solved by using either the left or right-hand rule. We will do the LEFT HAND RULE. Look at the black lines in the maze above and pretend you are a very teeny-tiny person and the black line represents a passageway that is walled in. First, you place your left hand on the wall at the starting point. Then you start walking, keeping your left hand touching the wall to your left. Whenever you reach an intersection, keep your hand on the wall and make the turn. With this algorithm, here is your path through the maze above.</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Walk down the first path to Intersection A, and go Straight.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Walk to the end of the path at Dead-End B. Keeping your left hand on the wall forces you to do a U-Turn.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Return to Intersection A and go Left.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Continue to Intersection C and go Left.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Take a mandatory Right turn towards Dead-End D</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">At dead-end D, make a U-Turn</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Return to Intersection C and turn Left.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Continue to dead-end E and make a U-Turn.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Return again to Intersection C and go Left.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Make a mandatory Left turn and go towards Intersection F.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Continue to Intersection F and go Left.</span></li>
+<li style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Reach the end of the maze at H.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">Notice that Dead-End G is never reached using the left hand rule.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium; font-family: times new roman,times;"><strong><span style="text-decoration: underline;">Compress the path</span></strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Now, most microprocessors have extremely limited memory, so storing the actions using words or phrases like "Go Left", "Go Straight" take up too much storage. Since there are only four possible actions, and they all start with a different letter, lets reduce the actions to:</span></p>
+<ul>
+<li><span style="font-family: courier new,courier; font-size: small;">L = Left Turn</span></li>
+<li><span style="font-family: courier new,courier; font-size: small;">R = Right Turn</span></li>
+<li><span style="font-family: courier new,courier; font-size: small;">U = U-Turn</span></li>
+<li><span style="font-family: courier new,courier; font-size: small;">S = Go Straight</span></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">The entire trip described above can be reduced to this string:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: small;">SULLRULLULLL</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Now, if you look at the maze, you can deduce that the "correct" path to complete the maze in the shortest time is: RRLL, so somehow, after (or during) the first trip through the maze, the sequence of turns needs to be converted from SULLRULLULLL to RRLL. That algorithm is explained in great detail in next point.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="text-decoration: underline; font-size: x-large;"><strong><span style="font-family: times new roman,times;">Developing the algorithm</span></strong></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/fig_1_4.jpg" border="0" width="521" height="406"></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: small;">Fig-2: The robot takes off! At the first intersection, the robot senses a “Straight or Right” intersection. The left hand rule requires that the robot go straight.</span></p>
+<p><span style="font-family: courier new,courier; font-size: small;"><br></span></p>
+<p><span style="font-family: courier new,courier; font-size: small;">Fig-3: The robot continues straight and stores the turn taken “S” in memory.</span></p>
+<p><span style="font-family: courier new,courier; font-size: small;"><br></span></p>
+<p><span style="font-family: courier new,courier; font-size: small;">Fig-4: The robot runs off the path (Pattern = “00000”) &amp; the correct behavior by take a U-Turn. After the U-Turn, record the turn taken “U” in memory.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-family: times new roman,times; font-size: small;">Let’s stop here for a moment and discuss an important point…</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-family: times new roman,times; font-size: small;">In this maze, every dead-end encountered means that the robot has taken a wrong turn! The best/shortest path through it never includes going down a dead-end path. So a dead-end can always be said to tell us: <em>The previous action/turn was not correct and needs to be changed.</em> We can’t be sure how we got here or the correct way to modify the previous turn until we return to the previous intersection. Let’s continue with the example to develop the algorithm…</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (7).jpg" border="0" width="275" height="168"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">When the robot gets back to the first intersection, it will go left. The left hand rule calls for a left turn, so take a left and record the turn. We recorded “SUL”, but we know (because of the “U”) that we should have not gone down that path. What could the robot have done to avoid going down the dead-end path? Instead of “SUL”, the robot should have done “R”. So, our first general rule is: Anywhere the stored path ends with “Straight-U-Left” (SUL), we replace it with “Right” (R). So, delete the “SUL” in memory. And replace “SUL” with “R”. This tells the robot, next time through the maze, to take a right turn at the first intersection.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/2_fig.jpg" border="0" width="517" height="154"></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">The next intersection is a “Four-Way” Intersection. The left hand rule requires a left hand turn, so turn left and record an “L”. The intersection coming up, the “Right-Only” has a special characteristic that needs explaining, so we will detour for a bit. The whole point of the maze algorithm is to eliminate bad turns. This “turn” has no choice, so a “bad” turn cannot be made. Since the robot can never go any direction but one, there is not even a need to record this turn in the maze path. So, in the maze, this will be treated as non-existent. The robot will take the correct turn as indicated by the left hand rule, but will never record this turn. So, the robot will turn right and record nothing in memory.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/fig.jpg" border="0" width="505" height="147"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Next, the robot will encounter a dead-end, do a U-turn and record a “U”. And we know from before, that the “U” tells us we just made a bad turn and need to return to the intersection we just came from.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (12).jpg" border="0" width="264" height="159"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Returning to the intersection, we see left turn coming, so record the “L” and since we just came down a bad path, examine the path.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (13).jpg" border="0" width="259" height="158"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">So, the robot, getting from point A to point B, did “LUL” which we know to be bad. What would the robot do next time to avoid this? Next time, we want to go straight, so we can replace the “LUL” with “S” for Straight.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (18).jpg" border="0" width="301" height="153"></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">We now have two “Replacement Rules”:</span></p>
+<ul>
+<li><span style="font-family: courier new,courier; font-size: small;">Replace “SUL” with “R”.</span></li>
+<li><span style="font-family: courier new,courier; font-size: small;">Replace “LUL” with “S”.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Once again, we are coming up on a dead-end, so we know that a Replacement Rule is coming soon. Do a 180 degree turn and record the “U”.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (14).jpg" border="0" width="296" height="179"></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">As we return to the intersection, we will take a left turn and record it.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (15).jpg" border="0" width="298" height="180"></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">As we return to the intersection, we will take a left turn and record it. By now, you may be catching on to the answer to the question? How do we know when it is time to invoke the Replacement Rule? ----Whenever there is a “U”!</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">We got here with "SUL", so the correct path next time will be to take a right turn, so replace "SUL" with "R". Next, left turn coming up, so take the left.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (16).jpg" border="0" width="276" height="165"></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">Only one more turn! The intersection coming up is a “Straight-Left” and the left hand rule will have the robot turn left and record an “L”.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (17).jpg" border="0" width="308" height="185"></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small; font-family: times new roman,times;">So, turn left and record an “L”. So, we reach the end of the maze with RRL in memory, ready to take the next run. On the next run, the “RRL” will properly guide the robot to the finish using the shortest possible path.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">So far we get:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: courier new,courier; font-size: small;">SUL = R</span></p>
+<p><span style="font-family: courier new,courier; font-size: small;">LUS = R</span></p>
+<p><span style="font-family: courier new,courier; font-size: small;">LUL = S</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">There is another combination.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: courier new,courier;">RUL = U (this is exceptional. For this see below example)</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <img src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/last_fig.jpg" border="0" width="440" height="303"></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">I have not covered every possibility.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: large; font-family: times new roman,times;">This is a “Teach you how to fish” tutorial. NOT a “Give you the fish” Tutorial.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: times new roman,times;">Have fun developing the source code for this algorithm.</span></p></div><div class="tutorialTabs_contents" id="gallery" style="display: none;">
+    <div class="images a-center">
+        <p class="main">
+            <a rel="prettyPhoto" href="https://www.techshopbd.com/uploads/tutorial/maze_robot%20(Custom).jpg" id="default_image_link">
+                <img alt="" height="92" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/maze_robot (Custom)_589058.jpg" width="92">            </a>
+        </p>
+                    <small>Click on the image to enlarge</small>
+            <p class="thumbs">
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/table.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/table_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(17).jpg"><img alt="" class="first thumbnail" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (17)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(16).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (16)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(15).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (15)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(14).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (14)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(13).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (13)_5516f7.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(12).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (12)_94c643.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(7).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (7)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/simple_maze.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/simple_maze_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/small_maze.JPG"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/small_maze_94c643.JPG" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(18).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (18)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/last_fig.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/last_fig_ff2048.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/fig_1_4.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/fig_1_4_94c643.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/fig.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/fig_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/2_fig.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/2_fig_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(1).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (1)_78c865.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="https://www.techshopbd.com/uploads/tutorial/mazebot%20(2).jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazebot (2)_94c643.jpg" width="55"></a>
+                                    <a rel="prettyPhoto[pp_gal]" href="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazes.jpg"><img alt="" height="55" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/mazes_78c865.jpg" width="55"></a>
+                            </p>
+            </div>
+</div><div class="tutorialTabs_contents" id="tutorials_comments" style="display: none;">
+    <div class="tutorials_comments">
+        <div id="comments_container" class="comment_control">
+            <div class="white" id="comments">
+                <div class="padding20">
+                                        <div class="a-center">
+                            <b><a class="link red-color" href="https://www.techshopbd.com/security/signin" title="Signin">Login</a>                                to post comments.</b>
+                        </div>
+                                    </div>
+                    <div id="comment_49" class="comment">
+        <div class="common_table_container">
+            <div class="common_table_row">
+                <div class="common_table_cell valign_middle valign_middle">
+                    <img alt="anon" height="30" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/anon.gif" width="30">                </div>
+                <div class="common_table_cell valign_middle padding_left10">
+                    Imrul                    | Jun 23,2012 at 09:04 PM                </div>
+            </div>
+        </div>
+        <div class="common_table_container">
+            <div class="common_table_row">
+                Really Helpful for beginner like me... Thanks a Lot. Appreciate the approach of techshopbd.com . Hope more tutorials will be given to help us ... Thanks ... :-)             </div>
+        </div>
+                                <div style="padding-left: 6px" id="comment_53" class="comment border_left1_275465">
+                    <div class="tutorial_comment_area"><!--Comment Area 2 Start-->
+                        <div class="valign_middle">
+                            <div class="common_table_container">
+                                <div class="common_table_row">
+                                    <div class="common_table_cell valign_middle">
+                                        <img alt="anon" height="30" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/anon.gif" width="30">                                    </div>
+                                    <div class="common_table_cell valign_middle padding_left10">
+                                        Fahad                                        | Jun 24,2012 at 11:16 AM                                    </div>
+                                </div>
+                            </div>
+                            <div class="common_table_container">
+                                <div class="common_table_row">
+                                    More tutorial are on the queue. Just hang on there! :)                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    <div id="comment_1882" class="comment">
+        <div class="common_table_container">
+            <div class="common_table_row">
+                <div class="common_table_cell valign_middle valign_middle">
+                    <img alt="anon" height="30" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/anon.gif" width="30">                </div>
+                <div class="common_table_cell valign_middle padding_left10">
+                    Harry99901                    | Oct 5,2014 at 12:39 PM                </div>
+            </div>
+        </div>
+        <div class="common_table_container">
+            <div class="common_table_row">
+                Can you share a sample code?            </div>
+        </div>
+                                <div style="padding-left: 6px" id="comment_1895" class="comment border_left1_275465">
+                    <div class="tutorial_comment_area"><!--Comment Area 2 Start-->
+                        <div class="valign_middle">
+                            <div class="common_table_container">
+                                <div class="common_table_row">
+                                    <div class="common_table_cell valign_middle">
+                                        <img alt="anon" height="30" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/anon.gif" width="30">                                    </div>
+                                    <div class="common_table_cell valign_middle padding_left10">
+                                        A.R                                        | Oct 8,2014 at 12:46 AM                                    </div>
+                                </div>
+                            </div>
+                            <div class="common_table_container">
+                                <div class="common_table_row">
+                                    Sorry. Not for this time being.                                                                     </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <!--Comment Area 1 Start-->
+        <div class="valign_middle"></div>
+        <!--Comment Area 1 Finished-->
+    </div>
+</div>    <div class="tutorialTabs_contents" id="related_products" style="display: none;">
+        <div class="clear"></div>
+                    <div class="related_product_grid hover_shadow">
+    <div class="image  freeShippingRelative">
+        <a class="link" href="https://www.techshopbd.com/product-categories/linear/109/lm7805-techshop-bangladesh" title="LM7805 - Linear - Techshop Bangladesh"><img alt="LM7805" class="thumbnail" height="100" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/TO-220_f10850.jpg" width="100"></a>    </div>
+    <div class="name">
+        <div>
+            <a class="link product_title" href="https://www.techshopbd.com/product-categories/linear/109/lm7805-techshop-bangladesh">LM7805</a>        </div>
+        <div class="product_code">Model : REG-00011</div>       
+        <div class="product_code">
+                    </div>
+        <div class="product_status_stock_available">
+            <img alt="Green" height="12" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/green.png" width="12"> <span>198 Available</span>        </div>
+    </div>
+    <div class="price">
+        <span class="color000 font_weight_normal"> 
+            <span class="taka_style">BDT</span>8.81        </span>
+    </div>
+    <div class="add_to_cart">  
+        <!-- product stock code here -->
+                        <form id="form_109" action="">
+                    <input type="text" value="1" class="txt_active" name="qty">
+                    <input type="hidden" value="1" name="moq">
+                    <input type="hidden" value="198" name="available_qty">
+                    <input type="hidden" value="OwnStock" name="product_stock">
+                    <input type="hidden" value="1" name="supplier_stock">
+                    <input type="button" onclick="addTocart(109);" value="Add to Cart" class="button_active addtocart">
+                </form>
+                <form method="post" action="">
+                    <p class="add-to-wishlist">
+                        <input type="hidden" value="109" name="product_id">
+                        <a href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#" onclick="wishListByClick(109);">
+                            <input type="button" value="Add To Wish List" class="button_wishlist addtowishlist" id="109">
+                        </a>
+                    </p>
+                </form>
+                <p class="errorWishlistMsg_109"></p>
+                <div id="console_109"> </div>
+               
+                
+    </div>
+</div>                        <div class="related_product_grid hover_shadow">
+    <div class="image  freeShippingRelative">
+        <a class="link" href="https://www.techshopbd.com/product-categories/drivers/208/l293d-techshop-bangladesh" title="L293D - Drivers - Techshop Bangladesh"><img alt="L293D" class="thumbnail" height="100" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/L293D_3c7427.jpg" width="100"></a>    </div>
+    <div class="name">
+        <div>
+            <a class="link product_title" href="https://www.techshopbd.com/product-categories/drivers/208/l293d-techshop-bangladesh">L293D</a>        </div>
+        <div class="product_code">Model : ROB-00009</div>       
+        <div class="product_code">
+                    </div>
+        <div class="product_status_stock_available">
+            <img alt="Green" height="12" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/green.png" width="12"> <span>13 Available</span>        </div>
+    </div>
+    <div class="price">
+        <span class="color000 font_weight_normal"> 
+            <span class="taka_style">BDT</span>87.36        </span>
+    </div>
+    <div class="add_to_cart">  
+        <!-- product stock code here -->
+                        <form id="form_208" action="">
+                    <input type="text" value="1" class="txt_active" name="qty">
+                    <input type="hidden" value="1" name="moq">
+                    <input type="hidden" value="13" name="available_qty">
+                    <input type="hidden" value="OwnStock" name="product_stock">
+                    <input type="hidden" value="1" name="supplier_stock">
+                    <input type="button" onclick="addTocart(208);" value="Add to Cart" class="button_active addtocart">
+                </form>
+                <form method="post" action="">
+                    <p class="add-to-wishlist">
+                        <input type="hidden" value="208" name="product_id">
+                        <a href="https://www.techshopbd.com/tutorial-categories/robotics/19/maze-solving-robot-techshop-bangladesh#" onclick="wishListByClick(208);">
+                            <input type="button" value="Add To Wish List" class="button_wishlist addtowishlist" id="208">
+                        </a>
+                    </p>
+                </form>
+                <p class="errorWishlistMsg_208"></p>
+                <div id="console_208"> </div>
+               
+                
+    </div>
+</div>                        <div class="related_product_grid hover_shadow">
+    <div class="image  freeShippingRelative">
+        <a class="link" href="https://www.techshopbd.com/product-categories/avr/729/attiny2313-techshop-bangladesh" title="ATtiny2313 - AVR - Techshop Bangladesh"><img alt="ATtiny2313" class="thumbnail" height="100" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/a2313 (Custom)_8b0369.jpg" width="100"></a>    </div>
+    <div class="name">
+        <div>
+            <a class="link product_title" href="https://www.techshopbd.com/product-categories/avr/729/attiny2313-techshop-bangladesh">ATtiny2313</a>        </div>
+        <div class="product_code">Model : MIC-00020</div>       
+        <div class="product_code">
+                    </div>
+        <div class="product_status_stock_available">
+            <img alt="Red" height="12" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/red.png" width="12"> <span>Out of Stock </span>        </div>
+    </div>
+    <div class="price">
+        <span class="color000 font_weight_normal"> 
+            <span class="taka_style">BDT</span>132.08        </span>
+    </div>
+    <div class="add_to_cart">  
+        <!-- product stock code here -->
+                        <form onsubmit="" method="post" action="https://www.techshopbd.com/add-to-cart">
+                    <input type="text" value="1" class="txt_active" name="qty">
+                    <input type="hidden" value="729" name="product_id">
+                                            <input type="submit" value="Add to Cart" disabled="disabled" class="button_deactive">
+                                    </form>
+                <form method="post" action="">
+                    <p class="add-to-wishlist">
+                        <input type="hidden" value="729" name="product_id">
+                            <input type="button" onclick="notifyByClick(729);" value="Notify Me W/A" id="729" class="button_active_notify">
+                    </p>
+                </form>
+                <p class="errornotifyMsg_729"></p>
+               
+                
+    </div>
+</div>                    <div class="clear"></div>
+    </div>
+        </div>
+        <div class="gap"></div>
+    </div>
+</div></div></div></div></div></div>                            </div>
+                            <!--rightBottom-->
+                        </div>
+                        <!--End rightPanel-->
+                    </div>
+                    <!--End innerMainBodyDiv-->
+                </div>
+                <!--End mainBodyDiv-->
+
+                <div id="footerDiv"><!--footerDiv-->
+                    <div class="innerFooter"><footer class="clearfix dm_area dm_layout_bottom" id="dm_area_164"><div class="dm_zones clearfix"><div class="dm_zone"><div class="dm_widgets"><div class="dm_widget main_footer"><div class="dm_widget_inner"><div class="footer-contenter" id="footer-contenter">
+    <div class="newslatter parts"><div class="nl-heading">Payment Methods</div><div class="weAccept"><p class="payment_method_logo"><img alt="COD" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/cod3.jpg" width="190"></p><p class="payment_method_logo"><img alt="bkash" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/bkash.png" width="145"></p><p class="payment_method_logo"><img alt="DBBL" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/DBBL-logo2.png" width="190"></p></div></div>
+    <div class="footer_links parts"><div class="nl-heading">Useful Links</div><ul><li><a class="link dm_parent" href="https://www.techshopbd.com/">Home</a></li><li><a class="link" href="https://www.techshopbd.com/training-course">Training Course</a></li><li><a class="link" href="https://www.techshopbd.com/about-us/faq">FAQ</a></li><li><a class="link" href="https://www.techshopbd.com/about-us/support">Support</a></li><li>    <a title="How to shop from TechShopBD" onclick="window.open(&#39;/uploads/product_document/How%20to%20shop%20from%20techshopbd.pdf&#39;,&#39;_blank&#39;)" href="javascript:void(0)">
+        Shopping Guideline    </a>
+</li><li>    <a title="How to order PCB from TechShopBD" onclick="window.open(&#39;/uploads/product_document/PCB_Order.pdf&#39;, &#39;_blank&#39;)" href="javascript:void(0)">
+        PCB Order Guideline    </a>
+</li><li><a href="https://www.techshopbd.com/about-us/support#warranty_replacement" title="Warranty and Replacement">Warranty and Replacement</a></li><li><a class="link" href="https://www.techshopbd.com/about-us/terms-conditions">Terms &amp; Conditions</a></li><li><a class="link" href="https://www.techshopbd.com/about-us/privacy-policy">Privacy Policy</a></li><li><a class="link" href="https://www.techshopbd.com/about-us">About Us</a></li><li><a class="link" href="https://www.techshopbd.com/contact-us">Contact Us</a></li></ul></div>
+    <div class="feedback parts last width_35 padding_left10">
+                    <div class="nl-heading">Feedback</div>
+<div class="contact">
+            <form id="dm_form_3" method="post" action="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/Maze Solving Robot Techshop Bangladesh   Techshopbd.htm">        <table>
+            <tbody><tr>
+                <td>
+                    <div class="field32 input-box"><input type="text" name="dm_contact_form[name]" placeholder="Your name...." class="required" id="dm_contact_form_name"></div>
+                                        <div class="clear"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field32 input-box"><input type="text" name="dm_contact_form[email]" placeholder="Your e-mail...." class="required" id="dm_contact_form_email"></div>
+                                        <div class="clear"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field32 input-box"><input type="text" name="dm_contact_form[subject]" placeholder="Mail subject...." class="required" id="dm_contact_form_subject"></div>
+                                        <div class="clear"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field32 input-box"><select name="dm_contact_form[department]" id="dm_contact_form_department">
+<option value="feedback">General</option>
+<option value="customer_service">Customer Service</option>
+<option value="pcb">PCB Support</option>
+<option value="marketing">Sourcing Support</option>
+<option value="technical_support">Technical Support</option>
+</select></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field32"><textarea rows="4" cols="30" name="dm_contact_form[body]" placeholder="Mail body...." class="required" id="dm_contact_form_body"></textarea></div>
+                                        <div class="clear"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="field32">
+                        <label for="dm_contact_form_mathCaptcha">What is 8 + 5?</label>                        <br><input name="dm_contact_form[mathCaptcha]" id="dm_contact_form_mathCaptcha">                    </div>
+                                        <div class="clear"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="a-right"><input type="submit" value="Submit" name="contact_submit" class="button_active padding5"></td>
+            </tr>
+        </tbody></table>
+        <input type="hidden" name="dm_contact_form[id]" id="dm_contact_form_id"><input type="hidden" name="dm_contact_form[_csrf_token]" value="564f7ea527134eb956fbab5a0abb36d4" id="dm_contact_form__csrf_token"></form>    </div>            </div>
+    <div class="clear_both"></div>
+</div></div></div></div></div><div class="dm_zone"><div class="dm_widgets"><div class="dm_widget main_follow_us"><div class="dm_widget_inner"><div class="follow_us">Follow us on <a href="https://www.facebook.com/techshopbd" target="_blank"><span class="fb">&nbsp;</span>
+            </a>
+</div></div></div></div></div></div></footer></div>
+                </div>
+                <!--End footerDiv--><!--footer-->
+            </div>
+            <!--End main wrapper-->
+        </div>
+    </div>
+<div class="a-center margin-top-10 margin_top15 margin_bottom15"><span class="font12">Copyright © 2012-13 Techshop Bangladesh. All rights reserved.</span></div><script type="text/javascript">var dm_configuration = {"relative_url_root":"","dm_core_asset_root":"\/dmCorePlugin\/","script_name":"\/","debug":false,"culture":"en","dateFormat":"m\/d\/yy","module":"dmFront","action":"page","authenticated":false,"page_id":"269"};</script><script type="text/javascript" src="./Maze Solving Robot Techshop Bangladesh   Techshopbd_files/9d95f2a1cd10d95d9e3234ca324e6bad.js"></script><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-40929689-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+
+
+</body></html>

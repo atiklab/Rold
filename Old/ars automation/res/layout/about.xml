@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="ECE'11, Khulna University"
+            android:textColor="#ff00"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="31dp"
+            android:textColor="#ff00"
+            android:text="We are the stuent of Electronics and Communication Engineering Discipline(3rd Year, 2nd Term). This is an android application and is developed for our Electronic Shop Practice Course. Our group members are Saif, Mahmud, Rekha, Taveer, Amin and Animesh. Using this app you would be able to control all the devices like lamps, fan,  air conditioning, etc and having a range of control of about 80m."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </RelativeLayout>
+
+</LinearLayout>
